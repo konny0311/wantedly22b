@@ -23,6 +23,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'rspec-rails'
+gem 'kaminari'
 
 group :development, :test do
   gem 'byebug', platform: :mri
