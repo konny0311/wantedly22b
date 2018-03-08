@@ -1,7 +1,7 @@
 # README
 
 # Database structure
-## feeds table
+## feeds テーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -10,12 +10,12 @@
 |user_id|int|null: false, index: true, foreign_key: true|
 |company_id|int|null: false, index: true, foreign_key: true|
 
-### Association
+### association
 - belongs_to :user
 - belongs_to :company
 - has_many :images
 
-## messages table
+## messages テーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -23,26 +23,26 @@
 |user_id|int|null: false, foreign_key: true|
 |project_id|int|null: false, foreign_key: true|
 
-### Association
+### association
 - belongs_to :user
 - belongs_to :project
 
-## projects table
+## projects テーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |title|text|null: false, index: true|
 |content|text|null: false|
 |company_id|int|null: false, index: true, foreign_key: true|
-|jobTitle|str|null: false|
-|jobType|int|null: false, index: true|
+|job_title|str|null: false|
+|job_type|int|null: false, index: true|
 
 
-### Association
+### association
 - belongs_to :company
 - has_many :messages
 
-## images table
+## images テーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -50,5 +50,5 @@
 |feed_id|int|null: false, foreign_key: true|
 
 
-### Association
+### association
 - belongs_to :feed
