@@ -34,8 +34,8 @@
 |title|text|null: false, index: true|
 |content|text|null: false|
 |company_id|int|null: false, index: true, foreign_key: true|
-|jobTitle|str|null: false|
-|jobType|int|null: false, index: true|
+|job_title|str|null: false|
+|job_type|int|null: false, index: true|
 
 
 ### Association
