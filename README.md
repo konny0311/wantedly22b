@@ -1,24 +1,54 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Database structure
+## feeds table
 
-Things you may want to cover:
+|Column|Type|Options|
+|------|----|-------|
+|title|text|null: false, index: true|
+|content|text|null: false, index: true|
+|user_id|int|null: false, index: true, foreign_key: true|
+|company_id|int|null: false, index: true, foreign_key: true|
 
-* Ruby version
+### Association
+- belongs_to :user
+- belongs_to :company
+- has_many :images
 
-* System dependencies
+## messages table
 
-* Configuration
+|Column|Type|Options|
+|------|----|-------|
+|content|text|null: false|
+|user_id|int|null: false, foreign_key: true|
+|project_id|int|null: false, foreign_key: true|
 
-* Database creation
+### Association
+- belongs_to :user
+- belongs_to :project
 
-* Database initialization
+## projects table
 
-* How to run the test suite
+|Column|Type|Options|
+|------|----|-------|
+|title|text|null: false, index: true|
+|content|text|null: false|
+|company_id|int|null: false, index: true, foreign_key: true|
+|job_title|str|null: false|
+|job_type|int|null: false, index: true|
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+### Association
+- belongs_to :company
+- has_many :messages
 
-* ...
+## images table
+
+|Column|Type|Options|
+|------|----|-------|
+|url|text|null: false|
+|feed_id|int|null: false, foreign_key: true|
+
+
+### Association
+- belongs_to :feed
