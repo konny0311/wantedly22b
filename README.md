@@ -328,7 +328,7 @@ Column|Type|Options|
 |start_date|string||
 |left_data|string||
 |position|string|null: false|
-|parttime_job|string||
+|parttime_job|boolean||
 |detail|text||
 |company_id|string|null: false, foreign_key: true|
 |user_id|string|null: false, foreign_key: true|
