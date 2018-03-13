@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: wantedly22b_production
-  username: wantedly22b
-  password: <%= ENV['WANTEDLY22B_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
