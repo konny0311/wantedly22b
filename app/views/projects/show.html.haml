@@ -5,8 +5,7 @@
   %p.project-title-sentence
 .company-info
   %p.company-name
-.company-image
-  =image_tag
+  =image_tag class: 'company-image'
 .company-under_bar
   %ol.under_bar
     %li.posted_date
@@ -27,15 +26,23 @@
         =position
     .company-members-introduction
       =introduction_of_each_member
+    -if company.what_content present?
     .what-content
-      =company.what-content
+      %h2 なにをやっているのか
+      =company.what_content
+    -if company.how_content present?
     .how-content
-      =company.how-content
+      %h2 どうやっているのか
+      =company.how_content
+    -if company.why_content present?
     .why-content
-      =company.why-content
+      %h2 なぜやっているのか
+      =company.why_content
     .requirements
-      =project.requirement
+      %h2 こんなことをやります
+      =project.content
     .latest-feeds
+      %h2 会社の注目の投稿
       %ol.feeds
         %li.feed_image
         %li.feed_date
