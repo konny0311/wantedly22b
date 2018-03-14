@@ -71,7 +71,25 @@
 
     }
     .latest-feeds {
+      .feed_image {
+        $height-feed_image: 30px;
+        $width-feed_image: 50px;
+      }
 
+      .feed_date {
+        font-size: $fontsize-feed_date;
+        color: $color-feed_date;
+      }
+
+      .feed_title {
+        font-size: $fontsize-feed_title;
+      }
+
+      .feed_writer {
+        .writer-image {
+
+        }
+      }
     }
     .project-info {
       .project-information {

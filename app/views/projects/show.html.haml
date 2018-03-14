@@ -15,63 +15,78 @@
   .main-contents
     -# contents in a left big box
     .company-members
-      =company.name のメンバー
+      =@project.company.name のメンバー
     .company-members-image
+     -# メンバーをdbから取ってきてeach |member|
      %ol.members
       %li.member-image
-        =image_tag
+        =image_tag member.image
       %li.member-name
-        =name
+        =member.name
       %li.member-position
-        =position
+        =member.position
     .company-members-introduction
-      =introduction_of_each_member
-    -if company.what_content present?
+      =member.profile
+    -if @project.company.what_content present?
     .what-content
       %h2 なにをやっているのか
-      =company.what_content
-    -if company.how_content present?
+      =@project.company.what_content
+    -if @project.company.how_content present?
     .how-content
       %h2 どうやっているのか
-      =company.how_content
-    -if company.why_content present?
+      =@project.company.how_content
+    -if @project.company.why_content present?
     .why-content
       %h2 なぜやっているのか
-      =company.why_content
+      =@project.company.why_content
     .requirements
       %h2 こんなことをやります
-      =project.content
+      =@project.content
     .latest-feeds
       %h2 会社の注目の投稿
+        最新企業feedを取ってきてeach |feed|
       %ol.feeds
         %li.feed_image
+          =feed.image
         %li.feed_date
+          =feed.created_date
         %li.feed_title
+          =feed.title
         %li.feed_writer
+          =image_tag feed.writer.image class: 'writer-image' if feed.writer.image present?
+          =feed.writer.name
+          %p=feed.writer.position
     .project-info
       %table.project-information 募集情報
         %tr.chart-bar
           %td.chart-left 探している人
-          %td.chart-right =
+          %td.chart-right
+            =
         %tr.chart-bar
           %td.chart-left 採用形態
-          %td.chart-right =
+          %td.chart-right
+            =
         %tr.chart-bar
           %td.chart-left 募集の特徴
-          %td.chart-right =
+          %td.chart-right
+            =
       %table.project-information 会社情報
         %tr.chart-bar
           %td.chart-left 創業者
-          %td.chart-right =
+          %td.chart-right
+            =@project.company.founder
         %tr.chart-bar
           %td.chart-left 設立年月
-          %td.chart-right =
+          %td.chart-right
+            =@company.?
         %tr.chart-bar
           %td.chart-left 社員数
-          %td.chart-right =
+          %td.chart-right
+            -# =employmentsでcount
         %tr.chart-bar
           %td.chart-left 関連業界
-          %td.chart-right =
+          %td.chart-right
+            = @project.company.business_type
 
   .right-bar
   -# will be rendered
