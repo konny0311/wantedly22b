@@ -1,47 +1,69 @@
+@import "config/variables";
+
+.contents-centered {
+  height: 100%;
+  width: $width-contents-centered;
+  margin: 0 auto;
+
 .project-title {
   height: $height-project-title;
   font-weight: bold;
   font-size: $fontsize-project-title;
+  border: solid thin black;
 }
 
 .company-info {
   height: $height-company-info;
   font-size: $fontsize-company-info;
+  border: solid thin black;
+}
 
-  .company-image {
+.company-image {
     height: $height-company-image;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-  }
+    border: solid thin black;
+
 }
 
 .company-under_bar {
   height: $height-company-under_bar;
   font-size: $fontsize-company-under_bar;
   color: $color-company-under_bar;
+  border: solid thin black;
+
 
   .posted_date {
     float: left;
+    margin: 0 10px;
   }
   .number_of_connected_friends {
     float: left;
+    margin: 0 10px;
   }
   .number_of_views {
     float: left;
+    margin: 0 10px;
   }
 }
 
 .contents {
+  position: relative;
+
   .main-contents {
     width: $width-main-contents;
     float: left;
+    border: solid thin black;
+
 
     .company-members {
-      height: ;
+      height: $height-company-members;
       vertical-align: center;
+      border: solid thin black;
+
     }
     .company-members-image {
+      height: $height-company-members;
+      border: solid thin black;
+
       .member-image {
         height: 40px;
         width: 40px;
@@ -57,20 +79,31 @@
     .company-members-introduction {
       font-size: $fontsize-company-info;
       min-height: 50px;
+      border: solid thin black;
+
     }
     .what-content {
+      border: solid thin black;
+
 
     }
     .how-content {
+      border: solid thin black;
+
 
     }
     .why-content {
+      border: solid thin black;
 
     }
     .requirements {
+      border: solid thin black;
+
 
     }
     .latest-feeds {
+      border: solid thin black;
+
       .feed_image {
         $height-feed_image: 30px;
         $width-feed_image: 50px;
@@ -92,6 +125,8 @@
       }
     }
     .project-info {
+      border: solid thin black;
+
       .project-information {
         font-size: $fontsize-project-information;
         font-weight: bold;
@@ -109,12 +144,16 @@
   }
 
   .right-bar {
-    width: calc(100% - $width-main-contents);
-    float: left;
+    width: calc(#{$width-contents-centered} - #{$width-main-contents} - 2px);
+    border: solid thin black;
+    // float: right;
+    position: absolute;
+    right: 0;
+
   }
 
 }
-
+}
 .recommended-projects {
 
 }
