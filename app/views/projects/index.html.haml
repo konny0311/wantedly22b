@@ -7,13 +7,13 @@
         .header__left__nav
           %ul
             %li.select
-              = link_to '募集をみる', root_path
+              = link_to "募集をみる", root_path
             %li
-              = link_to 'フィードをみる', root_path
+              = link_to "フィードをみる", root_path
             %li
-              = link_to 'プロフィール', root_path
+              = link_to "プロフィール", root_path
             %li
-              = link_to 'ツール', root_path
+              = link_to "ツール", root_path
             %li
               .form.search
                 %input{ type: "text", id: "global-search", placeholder: "人や会社、募集を検索" }
@@ -43,7 +43,71 @@
           .right-content__nav
           .right-content__item
     %footer
-      .company-info
-      %input/
-      .footer__logo
-      .footer__icon
+      .footer__inner
+        .footer__inner__top
+          .company-left
+            %ul.company-left__info
+              %li.nav.about-wrapper
+                %p About
+                %ul.company
+                  %li
+                    =link_to "運営会社", root_path
+                  %li
+                    =link_to "利用規約" , root_path
+                  %li
+                    =link_to "ヘルプ", root_path
+                  %li
+                    =link_to "プライバシー", root_path
+                  %li
+                    =link_to "採用担当者", root_path
+              %li.nav.products-wrapper1
+                %p Products
+                %ul.wantedly
+                  %li
+                    =link_to "Wantedly Visit", root_path
+                  %li
+                    =link_to "はたらくを面白く", root_path, class: "little"
+                  %li
+                    =link_to "Wantedly People", root_path
+                  %li
+                    =link_to "かしこく、名刺管理", root_path, class: "little"
+                  %li
+                    =link_to "Wantedly Chat", root_path
+                  %li
+                    =link_to "チャットで仕事を加速する", root_path, class: "little"
+              %li.nav.products-wrapper2
+                %p.white products
+                %ul.wantedly2
+                  %li
+                    =link_to "Wantedly Feed", root_path
+                  %li
+                    =link_to "ココロオドルナレッジ", root_path, class: "little"
+                  %li
+                    =link_to "Wantedly Tools", root_path
+                  %li
+                    =link_to "運命のツールが見つかる", root_path, class: "little"
+                  %li
+                    =link_to "Case by Wantedly", root_path
+                  %li
+                    =link_to "アート・作品でつながる", root_path, class: "little"
+              %li.nav.lang-wrapper
+                %p Languages
+                %ul.lang
+                  %li
+                    =link_to "日本語・", root_path
+                  %li
+                    =link_to "English", root_path
+          .company-right
+            %input/
+            .submit
+        .footer__inner__bottom
+          .footer__logo
+          .footer__icon
+            %ul
+              %li
+                = link_to image_tag("", alt: "facebook"), root_path
+              %li
+                = link_to image_tag("", alt: "twitter"), root_path
+              %li
+                = link_to image_tag("", alt: "youtube"), root_path
+              %li 日本
