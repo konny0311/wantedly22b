@@ -1,21 +1,36 @@
 @import "config/variables";
 
+.sentence {
+  width: 600px;
+}
+
 .contents-centered {
   height: 100%;
   width: $width-contents-centered;
   margin: 0 auto;
+  word-break: break-all;
+
 
 .project-title {
   height: $height-project-title;
   font-weight: bold;
   font-size: $fontsize-project-title;
   border: solid thin black;
+
+  p {
+    vertical-align: bottom;
+    padding-top: 70px;
+  }
 }
 
 .company-info {
   height: $height-company-info;
   font-size: $fontsize-company-info;
   border: solid thin black;
+
+  p {
+    padding: 15px 0;
+  }
 }
 
 .company-image {
@@ -33,25 +48,40 @@
 
   .posted_date {
     float: left;
-    margin: 0 10px;
+    padding: 5px 10px;
+    border: solid thin black;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+
   }
   .number_of_connected_friends {
     float: left;
-    margin: 0 10px;
+    padding: 5px 10px;
+    border: solid thin black;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+
   }
   .number_of_views {
     float: left;
-    margin: 0 10px;
+    padding: 5px 10px;
+    border: solid thin black;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
   }
 }
 
 .contents {
   position: relative;
 
-  .main-contents {
-    width: $width-main-contents;
+  .left-contents {
+    width: $width-left-contents;
     float: left;
     border: solid thin black;
+    border-left: none;
 
 
     .company-members {
@@ -82,9 +112,9 @@
       border: solid thin black;
 
     }
+  .company-policy {
     .what-content {
       border: solid thin black;
-
 
     }
     .how-content {
@@ -98,10 +128,10 @@
     }
     .requirements {
       border: solid thin black;
-
-
     }
+  }
     .latest-feeds {
+      height: $height-latest-feeds;
       border: solid thin black;
 
       .feed_image {
@@ -128,14 +158,27 @@
       border: solid thin black;
 
       .project-information {
+        width: calc(#{$width-left-contents} - 10px);
         font-size: $fontsize-project-information;
         font-weight: bold;
+        border: solid thin black;
+
+        .chart-top {
+          padding: 10px 10px;
+          border: solid thin black;
+          text-align: center;
+
+        }
+
 
       .chart-left {
+        padding: 10px 10px;
+        border: solid thin black;
 
       }
       .chart-right {
         font-weight: normal;
+        border: solid thin black;
 
       }
     }
@@ -143,13 +186,85 @@
 
   }
 
-  .right-bar {
-    width: calc(#{$width-contents-centered} - #{$width-main-contents} - 2px);
+  .right-contents {
+    width: calc(#{$width-contents-centered} - #{$width-left-contents} - 2px);
     border: solid thin black;
     // float: right;
     position: absolute;
     right: 0;
 
+    &-interests {
+
+      &-top {
+        height: $height-right-contents-interests-top;
+        border: solid thin black;
+
+        &-centered {
+          height: 100%;
+          margin: 0 10px;
+          border: solid thin black;
+
+          .entry-btn {
+            background-color: $color-entry-btn;
+            color: $color-entry-btn-letter;
+            font-size: 16px;
+            padding: 10px 45px;
+            position: absolute;
+            top: 10px;
+            left: 60px;
+          }
+
+          .entry-status {
+            font-size: $fontsize-entry-status;
+            font-weight: bold;
+            position: absolute;
+            top: 70px;
+          }
+
+          .entry-notice {
+            font-size: $fontsize-entry-status;
+            position: absolute;
+            top: 90px;
+          }
+
+          .entry-detail {
+            font-size: $fontsize-entry-status;
+            position: absolute;
+            top: 105px;
+          }
+
+          .check-later-btn {
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            border: solid thin black;
+            padding: 10px 76px;
+            position: absolute;
+            top: 130px;
+            left: 60px;
+          }
+
+        }
+
+      }
+
+      &-middle {
+
+      }
+
+      &-bottom {
+
+      }
+
+    }
+
+    &-map {
+
+    }
+
+    &-other-projects {
+
+    }
   }
 
 }

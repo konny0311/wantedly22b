@@ -1,16 +1,19 @@
 // variables of project#show
 // height
-$height-project-title: 50px;
-$height-company-info: 180px;
+$height-project-title: 100px;
+$height-company-info: 50px;
 $height-company-image: 300px;
 $height-company-under_bar: 30px;
+$height-latest-feeds: 100px;
 $height-feed_image: 30px;
 $height-company-members: 100px;
+$height-right-contents-interests-top: 190px;
+
 
 
 // width
 $width-contents-centered: 980px;
-$width-main-contents: 640px;
+$width-left-contents: 640px;
 $width-feed_image: 50px;
 // fontsize
 $fontsize-project-title: 20px;
@@ -19,7 +22,10 @@ $fontsize-company-under_bar: 16px;
 $fontsize-project-information: 20px;
 $fontsize-feed_date: 10px;
 $fontsize-feed_title: 16px;
+$fontsize-entry-status: 11px;
 
 // color
 $color-company-under_bar: black;
 $color-feed_date: blue;
+$color-entry-btn: #6CC644;
+$color-entry-btn-letter: white;

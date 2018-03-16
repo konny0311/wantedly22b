@@ -1800,3 +1800,1990 @@ Processing by ProjectsController#show as HTML
 Completed 200 OK in 98ms (Views: 95.0ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-15 22:16:39 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (28.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProjectsController#show as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = NULL LIMIT 1[0m
+Completed 401 Unauthorized in 57ms (ActiveRecord: 27.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=):
+  
+app/controllers/projects_controller.rb:7:in `show'
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (127.9ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:16:40 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (11.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (19.1ms)
+Completed 200 OK in 374ms (Views: 356.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:23:39 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 52ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:23:49 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:24:48 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 58ms (Views: 54.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:26:38 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (16.6ms)
+Completed 200 OK in 117ms (Views: 113.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:29:15 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 93ms (Views: 89.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:29:48 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 94ms (Views: 91.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:29:50 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:30:04 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 100ms (Views: 97.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:30:26 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:32:22 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:32:33 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:33:11 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 97ms (Views: 93.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:34:29 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 93ms (Views: 90.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:34:54 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:35:13 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.4ms)
+Completed 401 Unauthorized in 78ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after ".": expected class name, was "&-sentence"):
+    4:     <title>Wantedly22b</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   </head>
+    9: 
+   10:   <body>
+  
+app/assets/stylesheets/_project.scss:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1940312637642834816_70127164998220'
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.6ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:36:04 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (16.8ms)
+Completed 200 OK in 110ms (Views: 107.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:37:23 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:40:22 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 88ms (Views: 85.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:40:54 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 83ms (Views: 79.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:42:56 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:45:11 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 89ms (Views: 86.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:45:12 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:45:24 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 98ms (Views: 94.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:47:12 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 100ms (Views: 96.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:47:22 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 109ms (Views: 106.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:47:50 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 93ms (Views: 89.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:49:07 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 97ms (Views: 94.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:49:27 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:49:54 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 93ms (Views: 89.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:50:15 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 114ms (Views: 110.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:52:53 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 92ms (Views: 88.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:53:22 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 91ms (Views: 86.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:53:36 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 93ms (Views: 89.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:55:22 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 93ms (Views: 90.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 22:57:54 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 23:02:28 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 102ms (Views: 98.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 23:03:10 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 93ms (Views: 90.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 23:03:17 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 103ms (Views: 99.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 23:03:18 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 23:03:31 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 23:05:14 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 86ms (Views: 81.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-15 23:05:21 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 92ms (Views: 86.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 11:06:35 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (18.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (10.8ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (24.5ms)
+Completed 200 OK in 422ms (Views: 352.5ms | ActiveRecord: 37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:44:34 +0900
+Processing by ProjectsController#show as HTML
+  [1m[36mProject Load (2.9ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = NULL LIMIT 1[0m
+Completed 401 Unauthorized in 5ms (ActiveRecord: 2.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=):
+  
+app/controllers/projects_controller.rb:7:in `show'
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (155.1ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:44:35 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (23.1ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:51:13 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 53ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:52:59 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (4.7ms)
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %td and nested within it.):
+    67:         %tr.chart-bar
+    68:           %td.chart-left 探している人
+    69:           %td.chart-right webエンジニア
+    70:             -# =
+    71:         %tr.chart-bar
+    72:           %td.chart-left 採用形態
+    73:           %td.chart-right
+  
+app/views/projects/show.html.haml:70
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.9ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:53:12 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:56:11 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (3.2ms)
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    64:             -# %p=feed.writer.position
+    65:       .project-info
+    66:         %table.project-information 募集情報
+    67:           %tr.chart-bar
+    68:             %td.chart-left 探している人
+    69:             %td.chart-right webエンジニア
+    70:           %tr.chart-bar
+  
+app/views/projects/show.html.haml:67
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (108.4ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:57:24 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (2.4ms)
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    65:       .project-info
+    66:         %table.project-information 募集情報
+    67:         %tr.chart-bar
+    68:             %td.chart-left 探している人
+    69:             %td.chart-right webエンジニア
+    70:           %tr.chart-bar
+    71:             %td.chart-left 採用形態
+  
+app/views/projects/show.html.haml:68
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (109.2ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:57:34 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (2.4ms)
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    64:             -# %p=feed.writer.position
+    65:       .project-info
+    66:       %table.project-information 募集情報
+    67:         %tr.chart-bar
+    68:           %td.chart-left 探している人
+    69:           %td.chart-right webエンジニア
+    70:         %tr.chart-bar
+  
+app/views/projects/show.html.haml:67
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (116.3ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:57:46 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (2.2ms)
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    65:       .project-info
+    66:       %table.project-information 募集情報
+    67:       %tr.chart-bar
+    68:           %td.chart-left 探している人
+    69:           %td.chart-right webエンジニア
+    70:         %tr.chart-bar
+    71:           %td.chart-left 採用形態
+  
+app/views/projects/show.html.haml:68
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (115.3ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:58:24 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (3.6ms)
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    89:       %tr.chart-bar
+    90:         %td.chart-left 関連業界
+    91:         %td.chart-right
+    92:             -# = @project.company.business_type
+    93: 
+    94:     .right-contents aaaaaaaaaaaaaaaa
+    95:     -# will be rendered
+  
+app/views/projects/show.html.haml:92
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.7ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:58:34 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 14:59:37 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (2.6ms)
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    64:             -# %p=feed.writer.position
+    65:       .project-info
+    66:         %table.project-information 募集情報
+    67:           %tr.chart-bar
+    68:             %td.chart-left 探している人
+    69:             %td.chart-right webエンジニア
+    70:           %tr.chart-bar
+  
+app/views/projects/show.html.haml:67
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.0ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:02:01 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (2.1ms)
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    64:             -# %p=feed.writer.position
+    65:       .project-info
+    66:         %table.project-information 募集情報
+    67:           %tr.chart-bar
+    68:             %th.chart-left 探している人
+    69:             %th.chart-right webエンジニア
+    70:           %tr.chart-bar
+  
+app/views/projects/show.html.haml:67
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (108.8ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:03:45 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:04:20 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:04:32 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:05:47 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 100ms (Views: 97.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:07:28 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.6ms)
+Completed 401 Unauthorized in 87ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$width-main-contents".):
+    4:     <title>Wantedly22b</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   </head>
+    9: 
+   10:   <body>
+  
+app/assets/stylesheets/_project.scss:179
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__508270978255332833_70147630012440'
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (114.0ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:07:45 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:08:30 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 99ms (Views: 95.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:08:48 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 90ms (Views: 86.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:08:59 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 88ms (Views: 84.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:09:11 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 110ms (Views: 106.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:09:28 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 98ms (Views: 95.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:10:02 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 103ms (Views: 99.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:10:19 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 100ms (Views: 97.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:10:36 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 92ms (Views: 88.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:11:29 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 99ms (Views: 95.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:12:16 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:12:45 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 101ms (Views: 98.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:14:22 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:14:34 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:17:37 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (4.3ms)
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    76:             %td.chart-left 募集の特徴
+    77:             %td.chart-right ランチご馳走します
+    78:         %table.project-information 会社情報
+    79:           %tr.chart-bar
+    80:             %td.chart-left 創業者
+    81:             %td.chart-right
+    82:       %tr.chart-bar
+  
+app/views/projects/show.html.haml:79
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.6ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:18:15 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (2.2ms)
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    76:             %td.chart-left 募集の特徴
+    77:             %td.chart-right ランチご馳走します
+    78:         %table.project-information 会社情報
+    79:           %tr.chart-bar
+    80:             %td.chart-left 創業者
+    81:             %td.chart-right
+    82:           %tr.chart-bar
+  
+app/views/projects/show.html.haml:79
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (116.6ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:18:26 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:18:42 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:19:36 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:20:57 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:21:14 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:21:30 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:21:38 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:22:06 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:22:16 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:22:38 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:23:56 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:34:49 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (3.5ms)
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    93: 
+    94:     .right-contents
+    95:       .right-contents-interests interests
+    96:         .right-contents-interests-top top
+    97:         .right-contents-interests-middle middle
+    98:         .right-contents-interests-bottom bottom
+    99:       .right-contents-map map
+  
+app/views/projects/show.html.haml:96
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.3ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:35:15 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 110ms (Views: 107.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:38:08 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 97ms (Views: 93.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:38:59 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 108ms (Views: 104.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:39:11 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 109ms (Views: 105.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:41:53 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 114ms (Views: 110.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:42:57 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (3.9ms)
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    94:     .right-contents
+    95:       .right-contents-interests
+    96:         .right-contents-interests-top top
+    97:           %h.entry-btn 話を聞きに行きたい
+    98:         .right-contents-interests-middle middle
+    99:         .right-contents-interests-bottom bottom
+   100:       .right-contents-map map
+  
+app/views/projects/show.html.haml:97
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.6ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:43:04 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (3.4ms)
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+     95:       .right-contents-interests
+     96:         .right-contents-interests-top
+     97:         top
+     98:           %h.entry-btn 話を聞きに行きたい
+     99:         .right-contents-interests-middle middle
+    100:         .right-contents-interests-bottom bottom
+    101:       .right-contents-map map
+  
+app/views/projects/show.html.haml:98
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (115.0ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:43:10 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:43:24 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 42ms (Views: 37.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:44:23 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:44:37 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 118ms (Views: 114.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:44:54 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 109ms (Views: 105.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:46:12 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:46:19 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:46:57 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 125ms (Views: 122.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:47:22 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 110ms (Views: 107.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:47:32 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:48:21 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 107ms (Views: 104.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:48:42 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 115ms (Views: 111.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:48:51 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 126ms (Views: 122.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:49:26 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 114ms (Views: 111.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:49:55 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:50:03 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 109ms (Views: 106.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:50:20 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 114ms (Views: 111.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:50:32 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 118ms (Views: 114.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:50:59 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 111ms (Views: 108.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:52:26 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 116ms (Views: 112.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:53:03 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 109ms (Views: 105.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:53:16 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 113ms (Views: 109.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:53:28 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (18.2ms)
+Completed 200 OK in 119ms (Views: 115.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:53:48 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 117ms (Views: 114.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:54:00 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 112ms (Views: 108.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:54:33 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 117ms (Views: 113.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 15:54:40 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:42:23 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (20.3ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:42:59 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 108ms (Views: 104.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:43:16 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 43ms (Views: 37.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:45:08 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 121ms (Views: 118.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:45:23 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 116ms (Views: 113.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:46:00 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 122ms (Views: 118.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:46:10 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 131ms (Views: 128.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:46:11 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:46:23 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 111ms (Views: 108.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:47:53 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:48:20 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 39ms (Views: 35.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:48:37 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:48:59 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 142ms (Views: 139.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:49:17 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:49:54 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 119ms (Views: 116.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:49:55 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:53:00 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 113ms (Views: 110.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:53:29 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 124ms (Views: 121.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:53:39 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 115ms (Views: 112.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:54:33 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 119ms (Views: 115.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:54:40 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 114ms (Views: 110.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:57:09 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (14.1ms)
+Completed 401 Unauthorized in 96ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "}": expected selector or at-rule, was "}"):
+    4:     <title>Wantedly22b</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   </head>
+    9: 
+   10:   <body>
+  
+app/assets/stylesheets/_project.scss:269
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__508270978255332833_70147682074480'
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.4ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:57:27 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 134ms (Views: 131.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:57:39 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 118ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:58:35 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 124ms (Views: 121.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:59:37 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 120ms (Views: 115.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 16:59:53 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 114ms (Views: 110.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:02:00 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 116ms (Views: 113.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:03:13 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 129ms (Views: 126.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:03:27 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 117ms (Views: 113.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:03:42 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 123ms (Views: 119.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:03:51 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 118ms (Views: 114.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:05:16 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:06:44 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.8ms)
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:101: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ntry-detail" さらに詳しく>
+...                               ^
+/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:111: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:111: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:114: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/projects/show.html.haml:101: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/projects/show.html.haml:111: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/projects/show.html.haml:111: syntax error, unexpected keyword_end, expecting ')'
+app/views/projects/show.html.haml:114: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (116.5ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:07:14 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.9ms)
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:102: syntax error, unexpected ')'
+)).to_s);).to_s);; _hamlout.bu...
+ ^
+/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:111: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:111: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:114: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/projects/show.html.haml:102: syntax error, unexpected ')'
+app/views/projects/show.html.haml:111: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/projects/show.html.haml:111: syntax error, unexpected keyword_end, expecting ')'
+app/views/projects/show.html.haml:114: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (114.3ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:07:25 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (5.4ms)
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 13 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+     98:             %h.entry-btn 話を聞きに行きたい
+     99:             .entry-status 現在10人がエントリーしています
+    100:             .entry-notice エントリー状況は他のユーザーに公開されません
+    101:              = link_to 'https://www.google.co.jp/', class:"entry-detail", さらに詳しく>
+    102:             .check-later-btn あとで見る
+    103:         .right-contents-interests-middle middle
+    104:         .right-contents-interests-bottom bottom
+  
+app/views/projects/show.html.haml:101
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (131.7ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:07:32 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (3.5ms)
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 13 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+     98:             %h.entry-btn 話を聞きに行きたい
+     99:             .entry-status 現在10人がエントリーしています
+    100:             .entry-notice エントリー状況は他のユーザーに公開されません
+    101:              = link_to 'https://www.google.co.jp/', class:"entry-detail" さらに詳しく>
+    102:             .check-later-btn あとで見る
+    103:         .right-contents-interests-middle middle
+    104:         .right-contents-interests-bottom bottom
+  
+app/views/projects/show.html.haml:101
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (115.0ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:07:44 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (4.4ms)
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 13 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+     98:             %h.entry-btn 話を聞きに行きたい
+     99:             .entry-status 現在10人がエントリーしています
+    100:             .entry-notice エントリー状況は他のユーザーに公開されません
+    101:              =link_to 'https://www.google.co.jp/', class:"entry-detail" さらに詳しく>
+    102:             .check-later-btn あとで見る
+    103:         .right-contents-interests-middle middle
+    104:         .right-contents-interests-bottom bottom
+  
+app/views/projects/show.html.haml:101
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (115.1ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:07:50 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.9ms)
+Completed 401 Unauthorized in 24ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:101: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ntry-detail" さらに詳しく>
+...                               ^
+/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:111: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:111: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/Users/konotatsuya/projects/wantedly22b/app/views/projects/show.html.haml:114: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/projects/show.html.haml:101: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/projects/show.html.haml:111: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/projects/show.html.haml:111: syntax error, unexpected keyword_end, expecting ')'
+app/views/projects/show.html.haml:114: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (114.7ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:08:02 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:09:03 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (3.5ms)
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 13 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+     99:             .entry-status 現在10人がエントリーしています
+    100:             .entry-notice エントリー状況は他のユーザーに公開されません
+    101:             =link_to 'https://www.google.co.jp/', class:"entry-detail" do
+    102:              さらに詳しく
+    103:             .check-later-btn あとで見る
+    104:         .right-contents-interests-middle middle
+    105:         .right-contents-interests-bottom bottom
+  
+app/views/projects/show.html.haml:102
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.7ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/konotatsuya/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (122.2ms)
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:09:14 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-16 17:09:26 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.3ms)
+
+
