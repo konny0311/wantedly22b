@@ -1,21 +1,47 @@
 %body
   .main-view
     %header
-      #logo
-      .header__nav
-      %input/
-      .header__icon
-      .header__profile-image
+      .header__left
+        #logo
+          = link_to image_tag("logo.png", alt: "wantedly-home", height: "45px"), root_path
+        .header__left__nav
+          %ul.header__nav__item
+            %li.header__nav__item__menu.select
+              = link_to '募集をみる', root_path
+            %li.header__nav__item__menu
+              = link_to 'フィードをみる', root_path
+            %li.header__nav__item__menu
+              = link_to 'プロフィール', root_path
+            %li.header__nav__item__menu
+              = link_to 'ツール', root_path
+            %li.header__nav__item__menu
+              .form.search
+                %input{ type: "text", id: "global-search", placeholder: "人や会社、募集を検索" }
+                =fa_icon 'search', class: 'icon-search'
+      .header__right
+        %ul.header__right__icon
+          %li.header__right__icon__menu.profile-image
+            = link_to image_tag("", alt: "image"), root_path
+          %li.header__right__icon__menu
+            = link_to root_path do
+              = fa_icon 'bell', class: 'icon-bell icon'
+          %li.header__right__icon__menu
+            = link_to root_path do
+              = fa_icon 'user', class: 'icon-person icon'
+          %li.header__right__icon__menu
+            = link_to root_path do
+              = fa_icon 'comment', class: 'icon-message icon'
     .contents
-      .carousel
-      .sub-content
-        .sub-content__search
-        .sub-content__field
-        .sub-content__region
-        .sub-content__character
-      .main-content
-        .main-content__nav
-        .main-content__item
+      .contents__carousel
+      .contents__main-content
+        .left-content
+          .left-content__search
+          .left-content__field
+          .left-content__region
+          .left-content__character
+        .right-content
+          .right-content__nav
+          .right-content__item
     %footer
       .company-info
       %input/

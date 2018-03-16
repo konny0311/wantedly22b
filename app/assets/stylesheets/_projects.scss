@@ -1,0 +1,90 @@
+body{
+  width:100%;
+  margin:0 auto;
+}
+
+header{
+  position: relative;
+  width:100%;
+  min-width:1150px;
+  overflow: hidden;
+  .header__left{
+    float:left;
+    width:850px;
+    height:60px;
+    #logo{
+      float:left;
+      height:60px;
+      margin:0;
+      margin:8px;
+    }
+    .header__nav__item{
+      float:left;
+      width:780px;
+      .header__nav__item__menu{
+        float:left;
+        display: inline-block;
+        margin-left: 20px;
+        line-height: 60px;
+        a{
+          text-decoration: none;
+          color:#333;
+          font-size: 14px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+          font-weight: bold;
+        }
+        a:hover{
+          color:#00A4BB;
+        }
+        .form.search{
+          float:left;
+          position:relative;
+          width:380px;
+          height:100%;
+          #global-search{
+          margin:11px 0 10px 30px;
+          padding:0 35px 0 10px;
+          height:35px;
+          color:#9da0A4;
+          background-color: #f9f9f9;
+          width:300px;
+          border-radius: 5px;
+          border:1px solid #f5f5f5;
+          font-size: 14px;
+          outline: 0;
+          }
+          .icon-search{
+          height:30px;
+          position:absolute;
+          top:22px;
+          right:10px;
+          color:#bbb;
+          }
+        }
+      }
+    }
+  }
+  .header__right{
+    float:right;
+    width:280px;
+    height:60px;
+    // overflow: hidden;
+    margin-right: 20px;
+    .header__right__icon{
+      margin:10px;
+      width:280px;
+      .header__right__icon__menu{
+        display: inline-block;
+        padding:10px;
+        float:right;
+        .icon{
+          font-size:20px;
+          color:#bbb;
+        }
+      }
+    }
+  }
+}
+.contents{
+  clear:both;
+}
