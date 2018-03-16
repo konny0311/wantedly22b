@@ -1,0 +1,49 @@
+%body
+  .main-view
+    %header
+      .header__left
+        .header__left__logo
+          = link_to image_tag("logo.png", alt: "wantedly-home", height: "45px"), root_path
+        .header__left__nav
+          %ul
+            %li.select
+              = link_to '募集をみる', root_path
+            %li
+              = link_to 'フィードをみる', root_path
+            %li
+              = link_to 'プロフィール', root_path
+            %li
+              = link_to 'ツール', root_path
+            %li
+              .form.search
+                %input{ type: "text", id: "global-search", placeholder: "人や会社、募集を検索" }
+                =fa_icon 'search', class: 'icon-search'
+      .header__right
+        %ul
+          %li.profile-image
+            = link_to image_tag("", alt: "image"), root_path
+          %li
+            = link_to root_path do
+              = fa_icon 'bell', class: 'icon-bell icon'
+          %li
+            = link_to root_path do
+              = fa_icon 'user', class: 'icon-person icon'
+          %li
+            = link_to root_path do
+              = fa_icon 'comment', class: 'icon-message icon'
+    .contents
+      .contents__carousel
+      .contents__main-content
+        .left-content
+          .left-content__search
+          .left-content__field
+          .left-content__region
+          .left-content__character
+        .right-content
+          .right-content__nav
+          .right-content__item
+    %footer
+      .company-info
+      %input/
+      .footer__logo
+      .footer__icon
