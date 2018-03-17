@@ -1,4 +1,4 @@
 class Project < ApplicationRecord
-  belongs_go :company
+  belongs_to :company
   has_many :messages
 end
