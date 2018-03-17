@@ -2,30 +2,52 @@
 -# will be rendered
 .contents-centered
   .project-title
+    %span.job-type-tag キャリアチェンジしたい方
     %p.project-title-sentence
-      =@project.title
+      エンジニアにキャリアチェンジしたい方歓迎！CTOとお話しませんか？
   .company-info
-    %p.company-name company name
-  .company-image company image
+    =image_tag "wlogo.png", class: "comapny-image-top"
+    %p.company-name 株式会社Wantedly
+    %ul.share-tags
+      %li.facebook いいね ! 0
+      %li.twitter ツイート 0
+      %li.hatena B! Bookmark 0
+  =image_tag "wantedly22b.png", class: 'company-big-image'
   .company-under_bar
-    %ol.under_bar
-      %li.posted_date posted_date
-      %li.number_of_connected_friends friends
-      %li.number_of_views number of views
+    %ul.under_bar
+      %li.posted_date
+        %p 2018/03/17
+      %li.number_of_connected_friends
+        %p 社員との共通の友達(0)
+      %li.number_of_views
+        %p 1000
+    .support-box
+      .support-btn 応援する
+      .support-num 10
   .contents
     .left-contents
-      -# contents in a left big box
-      .company-members company members
-      -# =@project.company.name のメンバー
-      .company-members-image member images
-      -# メンバーをdbから取ってきてeach |member|
-      %ol.members
-        %li.member-image
-        -# =image_tag member.image
-        %li.member-name
-        -# =member.name
-        %li.member-position
-        -# =member.position
+      .company-members
+        %p 株式会社Wantedlyのメンバー
+        .header-btn 全員みる(10)
+      %ul.company-members-image
+        %li.member-container
+          =image_tag "wlogo.png", class: "member-img"
+          .member-name 名前フォント調整
+          .member-position 役職フォント調整
+        %li.member-container
+          =image_tag "wlogo.png", class: "member-img"
+          .member-name 鈴木太一
+          .member-position 営業部長
+          %li.member-container
+            =image_tag "wlogo.png", class: "member-img"
+            .member-name 鈴木太一
+            .member-position 営業部長
+          %li.member-container
+            =image_tag "wlogo.png", class: "member-img"
+            .member-name 鈴木太一
+            .member-position 営業部長
+
+
       .company-members-introduction member introduction
       -# =member.profile
       -# -if @project.company.what_content present?
@@ -95,16 +117,39 @@
       .right-contents-interests
         .right-contents-interests-top
           .right-contents-interests-top-centered
-            %h.entry-btn 話を聞きに行きたい
+            .entry-btn 話を聞きに行きたい
             .entry-status 現在10人がエントリーしています
             .entry-notice エントリー状況は他のユーザーに公開されません
             =link_to 'https://www.google.co.jp/', class:"entry-detail" do
               さらに詳しく>
             .check-later-btn あとで見る
-        .right-contents-interests-middle middle
-        .right-contents-interests-bottom bottom
-      .right-contents-map map
-      .right-contents-other-projects projects
+        .right-contents-interests-middle
+          %p 応援している人(10)
+          =link_to 'https://www.google.co.jp/', class:"see-all" do
+            全員見る
+        .right-contents-interests-bottom
+          .cheer-btn
+            %i.fa.fa-bullhorn
+            応援する
+          =link_to 'https://www.google.co.jp/', class:"cheer-detail" do
+            応援について詳しく>
+          .cheering-member-box 応援してくれている友人を表示
+          .cheering-notice 応援してくれる人の数が多いと、会社ランキングにランクインします
+      .right-contents-map
+        %p 地図
+      .right-contents-map-detail
+        %p 〒150-0043 東京都渋谷区 道玄坂2丁目23−12 フォンティスビル7F
+        .map-container
+          =image_tag "samplemap.png", class: "map-container"
+
+      .right-contents-projects-introduction
+        %p 企業の他の求人
+      %ul.right-contents-other-projects
+        %li.each-project
+          .ep-imagebox image
+          .ep-sentencebox
+            .ep-company company name
+            .ep-title titletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitle
 
 
 .recommended-projects
