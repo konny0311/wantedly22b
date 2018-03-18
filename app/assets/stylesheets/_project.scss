@@ -167,7 +167,6 @@
     }
     ul.company-members-image {
       height: $height-company-members-image;
-      border: solid thin silver;
 
       li {
         float: left;
@@ -181,35 +180,49 @@
         }
         .member-name {
           font-size: $fontsize-company-name;
+          font-weight: 600;
         }
         .member-position {
-          font-size: $fontsize-company-name;
+          font-size: $fontsize-company-member-position;
           color: $color-company-under_bar;
         }
       }
     }
     .company-members-introduction {
+      color: $fontsize-company-member-position;
       font-size: $fontsize-company-name;
       min-height: 100px;
-      border: solid thin silver;
+      width: 590px;
+      background-color: $color-member-introduction;
+      margin-left: 15px;
 
     }
   .company-policy {
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #6A6E71;
+      margin-top: 20px;
+
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 20px;
+    }
     .what-content {
-      border: solid thin silver;
 
     }
     .how-content {
-      border: solid thin silver;
 
 
     }
     .why-content {
-      border: solid thin silver;
 
     }
     .requirements {
-      border: solid thin silver;
     }
   }
     .latest-feeds {
