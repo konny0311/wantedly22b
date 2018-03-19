@@ -63,31 +63,43 @@
               %li.nav.products-wrapper1
                 %p Products
                 %ul.wantedly
-                  %li
-                    =link_to "Wantedly Visit", root_path
+                  %li.wantedly__title
+                    =link_to "Wantedly ", root_path
+                    %span
+                      =link_to "Visit", root_path, class: "strong"
                   %li
                     =link_to "はたらくを面白く", root_path, class: "little"
-                  %li
-                    =link_to "Wantedly People", root_path
+                  %li.wantedly__title
+                    =link_to "Wantedly ", root_path
+                    %span
+                      =link_to "People", root_path, class: "strong"
                   %li
                     =link_to "かしこく、名刺管理", root_path, class: "little"
-                  %li
-                    =link_to "Wantedly Chat", root_path
+                  %li.wantedly__title
+                    =link_to "Wantedly ", root_path
+                    %span
+                      =link_to "Chat", root_path, class: "strong"
                   %li
                     =link_to "チャットで仕事を加速する", root_path, class: "little"
               %li.nav.products-wrapper2
-                %p.white products
+                %p.white p
                 %ul.wantedly2
-                  %li
-                    =link_to "Wantedly Feed", root_path
+                  %li.wantedly__title
+                    =link_to "Wantedly ", root_path
+                    %span
+                      =link_to "Feed", root_path, class: "strong"
                   %li
                     =link_to "ココロオドルナレッジ", root_path, class: "little"
-                  %li
-                    =link_to "Wantedly Tools", root_path
+                  %li.wantedly__title
+                    =link_to "Wantedly ", root_path
+                    %span
+                      =link_to "Tools", root_path, class: "strong"
                   %li
                     =link_to "運命のツールが見つかる", root_path, class: "little"
-                  %li
-                    =link_to "Case by Wantedly", root_path
+                  %li.wantedly__title
+                    =link_to "Case", root_path, class: "strong"
+                    %span
+                      =link_to " by Wantedly", root_path
                   %li
                     =link_to "アート・作品でつながる", root_path, class: "little"
               %li.nav.lang-wrapper
@@ -98,16 +110,23 @@
                   %li
                     =link_to "English", root_path
           .company-right
-            %input/
-            .submit
+            .form
+              = form_for root_path do |f|
+                = f.text_area :message, class: "form__message", placeholder: "Wantedlyに意見を送る..."
+            %p.submit
+              = link_to "送信", root_path, class: "submit-btn"
+            / %input/
+            / .submit
         .footer__inner__bottom
           .footer__logo
-          .footer__icon
+            = image_tag("#", alt: "wantedly-name", height: "45px")
+          .footer__icon.clearfix
             %ul
               %li
-                = link_to image_tag("", alt: "facebook"), root_path
+                = link_to image_tag("facebook.png", alt: "facebook", height: "20px"), root_path
               %li
-                = link_to image_tag("", alt: "twitter"), root_path
-              %li
-                = link_to image_tag("", alt: "youtube"), root_path
-              %li 日本
+                = link_to image_tag("twitter.png", alt: "twitter", height: "20px"), root_path
+              %li.youtube
+                = link_to image_tag("youtube.png", alt: "youtube", height: "20px"), root_path
+            .country
+              =link_to "日本", root_path, class: "country-detail"
