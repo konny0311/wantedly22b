@@ -11,7 +11,7 @@
   word-break: break-all;
   font-family: "lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
   font-style: normal;
-  border: solid thin silver;
+  // font-weight: 600;
 
 
 .project-title {
@@ -92,6 +92,8 @@
   height: $height-company-under_bar;
   font-size: $fontsize-company-under_bar;
   color: $color-company-under_bar;
+  border: solid thin silver;
+  border-top: none;
 
   ul {
     height: 100%;
@@ -116,13 +118,15 @@
 
     .support-btn {
       display: inline-block;
-      background-color: $color-support-btn;
+      background-color: $color-background-support-btn;
       border: solid thin silver;
       line-height: 30px;
       margin: 18px 5px 10px 10px;
       padding: 0 20px;
       border-radius: 3px;
       font-size: $fontsize-support-btn;
+      font-weight: 600;
+      color: $color-support-btn;
     }
     .support-num {
       display: inline-block;
@@ -227,56 +231,182 @@
   }
     .latest-feeds {
       height: $height-latest-feeds;
-      border: solid thin silver;
+      margin-top: 20px;
 
-      .feed_image {
-        $height-feed_image: 30px;
-        $width-feed_image: 50px;
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #6A6E71;
+        margin: 20px 0;
       }
 
-      .feed_date {
-        font-size: $fontsize-feed_date;
-        color: $color-feed_date;
+      li {
+        height: $height-each-feed;
+        width: $width-each-feed;
+        float: left;
+        margin-right: 10px;
+
+      .feed-image {
+        height: $height-feed-image;
+        width: $width-each-feed;
+        margin-bottom: 5px;
       }
 
-      .feed_title {
-        font-size: $fontsize-feed_title;
+      small {
+        font-size: $fontsize-feed-tag;
+        color: $color-feed-tag;
       }
 
-      .feed_writer {
-        .writer-image {
+      .feed-title {
+        font-size: $fontsize-feed-title;
+        font-weight: 600;
+
+      }
+
+      .feed-writer {
+        border-top: solid thin silver;
+        height: 30px;
+        margin-top: 20px;
+        padding-top: 10px;
+        .writer-img {
+          display: inline-block;
+          line-height: 30px;
+          width: 28px;
+          border-radius: 50%;
+          vertical-align: middle;
+        }
+
+        .writer-name {
+          line-height: 30px;
+          vertical-align: middle;
+          display: inline-block;
+          font-size: 12px;
+          margin: auto 0;
+        }
+        .writer-position {
+          display: inline-block;
+          font-size: 11px;
+          color: #9DA0A4;
 
         }
       }
     }
+  }
     .project-info {
-      border: solid thin silver;
 
       .project-information {
         width: calc(#{$width-left-contents} - 10px);
         font-size: $fontsize-project-information;
         font-weight: bold;
-        border: solid thin silver;
 
         .chart-top {
           padding: 10px 10px;
           border: solid thin silver;
           text-align: center;
-
+          background-color: $color-chart-top;
         }
 
 
       .chart-left {
-        padding: 10px 10px;
+        width: $width-chart-left;
+        padding: 14px 24px;
         border: solid thin silver;
 
       }
       .chart-right {
         font-weight: normal;
         border: solid thin silver;
-
+        padding: 14px 24px;
+      }
+      .chart-bottom {
+        padding: 10px 10px;
+        border: solid thin silver;
+        text-align: center;
+        background-color: $color-chart-top;
+        font-size: 12px;
+        color: $color-chart-bottom;
       }
     }
+    .entry-btn-bottom {
+      display: inline-block;
+      width: 300px;
+      background-color: $color-entry-btn;
+      color: $color-smalltags;
+      border-radius: 3px;
+      font-size: 16px;
+      text-align: center;
+      padding: 10px 0;
+      margin: 20px 20px 0 0;
+    }
+
+    .later-btn-bottom {
+      display: inline-block;
+      width: 300px;
+      background-color: white;
+      color: black;
+      text-align: center;
+      font-size: 16px;
+      border: solid thin silver;
+      border-radius: 3px;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+      }
+
+      h4 {
+        font-size: 10px;
+        color: #9DA0A4;
+        margin: 10px 0;
+        }
+
+        a {
+          font-size: 11px;
+        }
+
+      .bottom-header {
+        margin: 20px 0;
+
+      h2 {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        color: #6A6E71;
+        margin: 10px 0;
+      }
+
+      h3 {
+        display: inline-block;
+        font-size: 11px;
+      }
+    }
+    .support-btn-bottom {
+      width: 300px;
+      background-color: $color-cheer-btn;
+      border: solid thin #1e7785;
+      border-radius: 3px;
+      color: $color-smalltags;
+      font-size: 16px;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .supporters-bottom {
+      height: 40px;
+      margin: 10px 0;
+
+    .supporters-bottom-img {
+      display: inline-block;
+      float: left;
+      height: 40px;
+      width: 40px;
+      margin-right: 7px;
+    }
+  }
   }
 
   }
@@ -284,6 +414,8 @@
   .right-contents {
     width: calc(#{$width-contents-centered} - #{$width-left-contents} - 2px);
     border: solid thin silver;
+    border-top: none;
+    border-right: none;
     position: absolute;
     right: 0;
 
@@ -426,11 +558,11 @@
       font-size: $fontsize-address;
       margin: 0 10px;
 
-      .map-container {
+      iframe {
         height: calc(#{$width-contents-centered} - #{$width-left-contents} - 22px);
         width: calc(#{$width-contents-centered} - #{$width-left-contents} - 22px);
-        border: solid thin silver;
-        margin-bottom: 10px;
+        margin: 10px 0;
+        border:none;
       }
     }
 
@@ -453,35 +585,34 @@
 
       .each-project {
         min-height: 100px;
-        border: solid thin silver;
+        width: 320px;
+        border-bottom: solid thin silver;
+        margin-left: 17px;
 
         .ep-imagebox {
-          border: solid thin silver;
-          height: 60px;
-          width: 60px;
-          margin: 20px 10px;
+          height: 67px;
+          width: 67px;
+          margin-top: 20px;
           float: left;
         }
         .ep-sentencebox {
-          border: solid thin silver;
           height: $height-sentencebox;
           width: $width-sentencebox;
-          margin: 10px 5px;
+          margin: 15px 0;
           position: absolute;
-          right: 10px;
+          right: 0;
           font-weight: bold;
+          font-size: 13px;
 
 
 
           .ep-company {
             min-width: 100px;
-            border: solid thin silver;
             color: $color-ep-company;
           }
 
           .ep-title {
             min-width: 100px;
-            border: solid thin silver;
           }
         }
       }
