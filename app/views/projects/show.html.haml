@@ -167,6 +167,7 @@
             会社ランキング
           にランクインします
 
+      .recommended-projects
 
 
 
@@ -190,8 +191,38 @@
             応援する
           =link_to 'https://www.google.co.jp/', class:"cheer-detail" do
             応援について詳しく>
-          .cheering-member-box 応援してくれている友人を表示
-          .cheering-notice 応援してくれる人の数が多いと、会社ランキングにランクインします
+          %ul.cheering-member-box
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+            %li
+              =image_tag "wlogo.png", class: "supporters-right-img"
+
+          .cheering-notice
+            応援してくれる人の数が多いと、
+            %span
+            =link_to 'https://www.google.co.jp/' do
+              会社ランキング
+            にランクインします
       .right-contents-map
         %p 地図
       .right-contents-map-detail
@@ -217,7 +248,5 @@
             .ep-title 家族向けサービスの開発を支える、SREチームの立ち上げメンバー募集！ SRE
 
 
-.recommended-projects
-  -# made later
 .footer
   -# will be rendered
