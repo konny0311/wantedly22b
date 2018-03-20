@@ -1,0 +1,74 @@
+.right-contents
+  .right-contents-interests
+    .right-contents-interests-top
+      .right-contents-interests-top-centered
+        .entry-btn 話を聞きに行きたい
+        .entry-status 現在10人がエントリーしています
+        .entry-notice エントリー状況は他のユーザーに公開されません
+        =link_to 'https://www.google.co.jp/', class:"entry-detail" do
+          さらに詳しく >
+        .check-later-btn あとで見る
+    .right-contents-interests-middle
+      %p 応援している人(10)
+      =link_to 'https://www.google.co.jp/', class:"see-all" do
+        全員見る
+    .right-contents-interests-bottom
+      .cheer-btn
+        %i.fa.fa-bullhorn
+        応援する
+      =link_to 'https://www.google.co.jp/', class:"cheer-detail" do
+        応援について詳しく>
+      %ul.cheering-member-box
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+        %li
+          =image_tag "wlogo.png", class: "supporters-right-img"
+      .cheering-notice
+        応援してくれる人の数が多いと、
+        %span
+        =link_to 'https://www.google.co.jp/' do
+          会社ランキング
+        にランクインします
+    .right-contents-map
+      %p 地図
+    .right-contents-map-detail
+      %p 〒150-0043 東京都渋谷区 道玄坂2丁目23−12 フォンティスビル7F
+      %iframe{:allowfullscreen => "",  :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6903378789248!2d139.6941195812203!3d35.660000301006924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188caa2b7ef465%3A0x759462f156bf2a40!2zVEVDSDo6RVhQRVJUIOa4i-iwt-aVmeWupA!5e0!3m2!1sja!2sjp!4v1521447561016"}
+  .right-contents-projects-introduction
+    %p 企業の他の求人
+  %ul.right-contents-other-projects
+    %li.each-project
+      =image_tag "wlogo.png", class: "ep-imagebox"
+      .ep-sentencebox
+        .ep-company 株式会社Wantedly
+        .ep-title 家族向けサービスの開発を支える、SREチームの立ち上げメンバー募集！
+    %li.each-project
+      =image_tag "wlogo.png", class: "ep-imagebox"
+      .ep-sentencebox
+        .ep-company 株式会社Wantedly
+        .ep-title 家族向けサービスの開発を支える、SREチームの立ち上げメンバー募集！
+    %li.each-project
+      =image_tag "wlogo.png", class: "ep-imagebox"
+      .ep-sentencebox
+        .ep-company 株式会社Wantedly
+        .ep-title 家族向けサービスの開発を支える、SREチームの立ち上げメンバー募集！
