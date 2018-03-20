@@ -1,0 +1,185 @@
+@import "config/variables";
+
+.right-contents {
+  width: calc(#{$width-contents-centered} - #{$width-left-contents} - 2px);
+  border-left: solid thin silver;
+  position: absolute;
+  right: 0;
+  &-interests {
+    width: $width-right-btn;
+    margin: 0 10px;
+    &-top {
+      height: $height-right-contents-interests-top;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: $color-background-right-top;
+      &-centered {
+        height: 100%;
+        .entry-btn {
+          width: $width-right-btn;
+          background-color: $color-entry-btn;
+          color: $color-smalltags;
+          border-radius: 3px;
+          font-size: 16px;
+          text-align: center;
+          padding: 10px 0;
+          position: absolute;
+          top: 10px;
+        }
+        .entry-status {
+          font-size: $fontsize-entry-status;
+          font-weight: bold;
+          position: absolute;
+          top: 70px;
+        }
+        .entry-notice {
+          font-size: $fontsize-entry-status;
+          position: absolute;
+          top: 90px;
+        }
+        .entry-detail {
+          font-size: $fontsize-entry-status;
+          position: absolute;
+          top: 105px;
+        }
+        .check-later-btn {
+          width: $width-right-btn;
+          background-color: white;
+          color: black;
+          text-align: center;
+          font-size: 16px;
+          border: solid thin silver;
+          border-radius: 3px;
+          padding: 10px 0;
+          position: absolute;
+          top: 130px;
+        }
+      }
+    }
+    &-middle {
+      height: $height-right-contents-interests-title;
+      border: solid thin silver;
+      border-left: none;
+      border-right: none;
+      p {
+        float: left;
+        font-size: 14px;
+        padding: 14px 14px;
+      }
+      .see-all {
+        float: right;
+        font-size: 11px;
+        padding: 14px 10px 14px 0;
+      }
+    }
+    &-bottom {
+      height: 300px;
+      font-size: $fontsize-entry-status;
+      .cheer-btn {
+        width: $width-right-btn;
+        background-color: $color-cheer-btn;
+        border: solid thin #1e7785;
+        border-radius: 3px;
+        color: $color-smalltags;
+        font-size: 16px;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 10px;
+        position: absolute;
+        left: 12px;
+      }
+      .cheer-detail {
+        font-size: $fontsize-entry-status;
+        position: absolute;
+        top: 300px;
+      }
+      .cheering-member-box {
+        height: $height-cheering-member-box;
+        width: calc(#{$width-contents-centered} - #{$width-left-contents} - 22px);
+        margin-top: 10px;
+        position: absolute;
+        top: 320px;
+        .supporters-right-img {
+          float: left;
+          margin: 10px 10px 0 0;
+          height: 40px;
+          width: 40px;
+        }
+      }
+      .cheering-notice {
+        width: $width-right-btn;
+        position: absolute;
+        top: 500px;
+        font-size: 10px;
+        color: #9DA0A4;
+        margin: 10px 0;
+      }
+    }
+  }
+  &-map {
+    height: $height-right-contents-interests-title;
+    border-top: solid thin silver;
+    border-bottom: solid thin silver;
+    p {
+      float: left;
+      font-size: 14px;
+      padding: 14px 14px;
+    }
+  }
+  &-map-detail {
+    font-size: $fontsize-address;
+    width: $width-right-btn;
+    margin: 0 10px;
+    iframe {
+      height: $length-map;
+      width: $length-map;
+      margin: 10px 0;
+      border:none;
+    }
+  }
+  &-projects-introduction {
+    height: $height-right-contents-interests-title;
+    width: $width-right-btn;
+    border-top: solid thin silver;
+    border-bottom: solid thin silver;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    p {
+      float: left;
+      font-size: 14px;
+      padding: 14px 14px;
+    }
+  }
+  &-other-projects {
+    min-height: 300px;
+    .each-project {
+      min-height: 100px;
+      width: $width-right-btn;
+      border-bottom: solid thin silver;
+      .ep-imagebox {
+        height: 67px;
+        width: 67px;
+        margin: 20px 0 0 10px;
+        float: left;
+      }
+      .ep-sentencebox {
+        height: $height-sentencebox;
+        width: $width-sentencebox;
+        margin: 15px 0;
+        position: absolute;
+        right: 40px;
+        font-weight: bold;
+        font-size: 13px;
+        .ep-company {
+          min-width: 100px;
+          color: $color-ep-company;
+        }
+        .ep-title {
+          min-width: 100px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "config/variables";
+
+.bottom-recommended-projects-box {
+float: left;
+border-top: solid thin silver;
+height: 100%;
+width: 153%;
+  .projects-row-wrapper {
+    color: $color-company-members;
+    font-size: $fontsize-company-name;
+    font-weight: bold;
+    margin-top: 30px;
+    .bottom-each-recommended-project {
+      float: left;
+      margin: 20px 20px 20px 0;
+      width: 223px;
+      .bottom-recommended-project-img {
+        height: 90px;
+        width: 223px;
+      }
+      .bottom-recommended-project-title {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .bottom-recommended-project-company-img {
+        float: left;
+        height: 30px;
+        width: 30px;
+      }
+      .bottom-recommended-project-company-name {
+        float: left;
+        font-size: 13px;
+        color: #9DA0A4;
+        margin: 10px 0 0 5px;
+      }
+    }
+  }
+  .bottom-recent-projects-box {
+    float: left;
+    border-top: solid thin silver;
+    height: 100%;
+    width: 100%;
+  }
+}

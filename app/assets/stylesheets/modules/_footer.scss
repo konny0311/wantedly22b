@@ -1,0 +1,191 @@
+@import "./color";
+@import "./clearfix";
+@import "footer/little";
+@import "footer/strong";
+@import "footer/list";
+
+footer{
+  width: 100%;
+  height: 300px;
+  padding: 65px 0;
+  .footer__inner{
+    width: 1050px;
+    margin: 0 auto;
+    .footer__inner__top{
+      height: 250px;
+      .company-left{
+        width: 750px;
+        .company-left__info{
+          .about-wrapper{
+            margin-right: 80px;
+          }
+          .products-wrapper1{
+            margin-right: 30px;
+          }
+          .products-wrapper2{
+            margin-right: 80px;
+          }
+          .lang-wrapper{
+            margin-right: 80px;
+          }
+          .nav{
+            float: left;
+            font-family: bold;
+            p{
+              margin-bottom: 20px;
+              font-size: 14px;
+              font-weight: bold;
+            }
+            .white{
+              color: $white;
+            }
+            .company{
+              li{
+                @include list();
+                margin-bottom: 12px;
+                a{
+                 text-decoration: none;
+                 color: $footer-nav;
+                }
+                a:hover{
+                  color: $nav-hover;
+                }
+              }
+            }
+            .wantedly{
+              padding-right: 20px;
+              border-right: solid 1px #EBEDEF;
+              li{
+                @include list();
+                margin-bottom: 15px;
+                .little{
+                  @include little();
+                  line-height: 0.5em;
+                }
+                .strong{
+                  @include strong();
+                }
+                a{
+                 text-decoration: none;
+                 color: $footer-nav;
+                }
+                a:hover{
+                  color: $nav-hover;
+                }
+              }
+              .wantedly__title{
+                margin-bottom:2px;
+              }
+            }
+            .wantedly2{
+              li{
+                @include list();
+                margin-bottom: 15px;
+                .little{
+                  @include little();
+                }
+                .strong{
+                  @include strong();
+                }
+                a{
+                 text-decoration: none;
+                 color: $footer-nav;
+                }
+                a:hover{
+                  color: $nav-hover;
+                }
+              }
+              .wantedly__title{
+                margin-bottom: 2px;
+              }
+            }
+            .lang{
+              li{
+                font-size: 14px;
+                line-height: 1.3;
+                margin-bottom: 10px;
+                a{
+                 text-decoration: none;
+                 color: $footer-nav;
+                }
+                a:hover{
+                  color: $nav-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+      .company-right{
+        float: right;
+        width: 300px;
+        margin: 0;
+        height: 200px;
+        form{
+          height: 100%;
+          margin-bottom: 10px;
+          .form__message{
+            width: 290px;
+            height: 120px;
+            font-size: 12px;
+            border: 1px solid #D7DBDF;
+            border-radius: 5px;
+            outline: none;
+            padding: 10px 0 0 10px;
+            &::-webkit-input-placeholder {
+              color: #D7DBDF;
+            }
+          }
+        }
+        .submit{
+          width: 100%;
+          padding: 10px 0;
+          text-align: center;
+          background-color: #f5f5f5;
+          .submit-btn{
+            color: #aaa;
+            text-decoration: none;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .footer__inner__bottom{
+      @include clearfix();
+      .footer__logo{
+        float: left;
+      }
+      .footer__icon{
+        float:right;
+        @include clearfix();
+        ul{
+          float: left;
+          overflow: hidden;
+          display: block;
+          li{
+            display: inline-block;
+            margin-left: 10px;
+            line-height: 26px;
+            a{
+              height: 20px;
+            }
+          }
+          .youtube{
+            margin-right: 10px;
+          }
+        }
+        .country{
+          line-height: 20px;
+          font-size: 14px;
+          width: 30px;
+          float: right;
+          .country-detail{
+            text-decoration: none;
+            color: $footer-nav;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
