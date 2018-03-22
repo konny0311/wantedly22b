@@ -152,8 +152,9 @@
     }
   }
   &__projects--others {
-    min-height: 300px;
+    min-height: 50px;
     &--each {
+      list-style: none;
       min-height: 100px;
       width: $width-right-btn;
       border-bottom: solid thin silver;
@@ -168,7 +169,7 @@
         width: $width-sentencebox;
         margin: 15px 0;
         position: absolute;
-        right: 40px;
+        right: 10px;
         font-weight: bold;
         font-size: 13px;
         &__company {

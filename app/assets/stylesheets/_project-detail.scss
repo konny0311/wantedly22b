@@ -189,6 +189,7 @@
             margin: 20px 0;
           }
           &__each__feed {
+            list-style: none;
             height: $height-each-feed;
             width: $width-each-feed;
             float: left;

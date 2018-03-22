@@ -40,9 +40,12 @@
       %iframe{:allowfullscreen => "",  :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6903378789248!2d139.6941195812203!3d35.660000301006924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188caa2b7ef465%3A0x759462f156bf2a40!2zVEVDSDo6RVhQRVJUIOa4i-iwt-aVmeWupA!5e0!3m2!1sja!2sjp!4v1521447561016"}
   .contents--right__projects__introduction
     %p 企業の他の求人
-  %ul.contents--right__projects--others
-    %li.contents--right__projects--others--each
-      =image_tag "wlogo.png", class: "contents--right__projects--others--each__imagebox"
-      .contents--right__projects--others--each__sentencebox
-        .contents--right__projects--others--each__sentencebox__company 株式会社Wantedly
-        .contents--right__projects--others--each__sentencebox__title 家族向けサービスの開発を支える、SREチームの立ち上げメンバー募集！
+    %ul.contents--right__projects--others
+    - @projects.each do |project|
+      %li.contents--right__projects--others--each
+        =image_tag @company.logo, class: "contents--right__projects--others--each__imagebox"
+        .contents--right__projects--others--each__sentencebox
+          .contents--right__projects--others--each__sentencebox__company
+            =@company.name
+          .contents--right__projects--others--each__sentencebox__title
+            =project.title
