@@ -1,15 +1,22 @@
+@import "./color";
+@import "./clearfix";
+@import "./footer/little";
+@import "./footer/strong";
+@import "./footer/list";
+
+
 footer{
   width: 100%;
   height: 300px;
   padding: 65px 0;
-  &__inner{
+  .footer__inner{
     width: 1050px;
     margin: 0 auto;
     &__top{
       height: 250px;
       .company-left{
         width: 750px;
-        &__info{
+        .company-left__info{
           .about-wrapper{
             margin-right: 80px;
           }

@@ -1,9 +1,15 @@
+@import "./color";
+@import "./clearfix";
+@import "./footer/little";
+@import "./footer/strong";
+@import "./footer/list";
+
 header{
   position: relative;
   width: 100%;
   min-width: 1150px;
   overflow: hidden;
-  &__left{
+  .header__left{
     float: left;
     width: 850px;
     height: 60px;
@@ -61,7 +67,7 @@ header{
       }
     }
   }
-  &__right{
+  .header__right{
     float: right;
     width: 280px;
     height: 60px;
