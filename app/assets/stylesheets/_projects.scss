@@ -7,10 +7,31 @@
 body{
   width: 100%;
   margin: 0 auto;
+  height:100%;
 }
 
 
 .contents{
   clear: both;
-  height: 1000px;
+  height: 2000px;
+  &__carousel{
+    width: 100%;
+    height: 450px;
+    background: #ccc;
+  }
+  &__main{
+    width: 900px;
+    margin: 50px auto 0;
+    background: #999;
+    height:1550px;
+    &__left{
+      width: 300px;
+      background-color: #fff;
+      height: 100%;
+    }
+    &__right{
+      width: 600px;
+      height: 100%;
+    }
+  }
 }
