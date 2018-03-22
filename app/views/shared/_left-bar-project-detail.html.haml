@@ -1,30 +1,29 @@
-.left-contents
-  .company-members
+.contents--left
+  .contents--left__company__members
     %p 株式会社Wantedlyのメンバー
-    .header-btn 全員みる(10)
-  %ul.company-members-image
-    %li.member-container
-      =image_tag "wlogo.png", class: "member-img"
-      .member-name 鈴木太一
-      .member-position 営業部長
-    %li.member-container
-      =image_tag "wlogo.png", class: "member-img"
-      .member-name 鈴木太一
-      .member-position 営業部長
-      %li.member-container
-        =image_tag "wlogo.png", class: "member-img"
-        .member-name 鈴木太一
-        .member-position 営業部長
-      %li.member-container
-        =image_tag "wlogo.png", class: "member-img"
-        .member-name 鈴木太一
-        .member-position 営業部長
-  .company-members-introduction スタートアップでフロントエンドエンジニアとして働きながら、個人では紙でもスクリーンでもない地図プロダクトを作っています。前職では、開発者向けプロダクト/サービスのマネージメントを任され、検証、ローカライズ、営業支援、プロダクトマーケティングなど幅広い業務を経験。その他にも、ブログ執筆、コミュニティイベントの運営・支援を通した、開発者向けのマーケティング活動 (DevRel) を企画してリードしていました。
-  -# -if @project.company.what_content present?
-  .company-policy
+    .contents--left__company__members__header__btn 全員みる(10)
+  %ul.contents--left__company__members__image
+    %li.contents--left__company__members__image__container
+      =image_tag "wlogo.png", class: "contents--left__company__members__image__container__member__img"
+      .contents--left__company__members__image__container__member__name 鈴木太一
+      .contents--left__company__members__image__container__member__position 営業部長
+    %li.contents--left__company__members__image__container
+      =image_tag "wlogo.png", class: "contents--left__company__members__image__container__member__img"
+      .contents--left__company__members__image__container__member__name 鈴木太一
+      .contents--left__company__members__image__container__member__position 営業部長
+    %li.contents--left__company__members__image__container
+      =image_tag "wlogo.png", class: "contents--left__company__members__image__container__member__img"
+      .contents--left__company__members__image__container__member__name 鈴木太一
+      .contents--left__company__members__image__container__member__position 営業部長
+    %li.contents--left__company__members__image__container
+      =image_tag "wlogo.png", class: "contents--left__company__members__image__container__member__img"
+      .contents--left__company__members__image__container__member__name 鈴木太一
+      .contents--left__company__members__image__container__member__position 営業部長
+  .contents--left__company__members__introduction スタートアップでフロントエンドエンジニアとして働きながら、個人では紙でもスクリーンでもない地図プロダクトを作っています。前職では、開発者向けプロダクト/サービスのマネージメントを任され、検証、ローカライズ、営業支援、プロダクトマーケティングなど幅広い業務を経験。その他にも、ブログ執筆、コミュニティイベントの運営・支援を通した、開発者向けのマーケティング活動 (DevRel) を企画してリードしていました。
+  .contents--left__company__policy
     .what-content
       %h2 なにをやっているのか
-      %p.sentence
+      %p
         学べる生放送コミュニケーションサービス「Schoo（スクー） 」を運営しています。
         「未来にむけて、社会人が今学んでおくべきこと」をコンセプトにした最先端分野の生放送授業と、プログラミング/Webデザイン等のITスキル・マーケティング・ビジネススキル等の「明日の仕事に生きる」動画教材を約3,000時間提供しています。
         Schooのサービスは、「Web上に学校ができたら面白そう」という発想から生まれました。実際の学校のように「そこに人がいる感覚」を大事にし、教室の一体感や臨場感をWeb上で実現しています。
@@ -37,95 +36,78 @@
         https://www.atpress.ne.jp/news/146629
         ・【スクー】個人と組織を変革するインターネット学習の未来――代表・森 健志郎氏インタビュー
         https://officee.jp/magazine/schoo/
-      -# -if @project.company.how_content present?
     .how-content
       %h2 どうやっているのか
-      %p.sentence 【自社のカルチャーとして大切にしていること】  1. We’re Curious（問い続ける） 2. We’re Autonomous（主体的である） 3. We’re Doers（やり抜く）「SmartDrive Culture」の制作プロセス https://blog.smartdrive.co.jp/smartdrive-culture-f82ac9b1bcd6【事業内容】 弊社はデバイスやそこに組み込むソフトウェアの開発から、スマホアプリ（iOS/Android）やウェブサービスまで、幅広いレイヤーで開発を行なっています。そのため、社員のバックグラウンドも、メーカー、インターネット企業、ゲーム、航空宇宙、コンサルなど様々です。
-      -# -if @project.company.why_content present?
+      %p 【自社のカルチャーとして大切にしていること】  1. We’re Curious（問い続ける） 2. We’re Autonomous（主体的である） 3. We’re Doers（やり抜く）「SmartDrive Culture」の制作プロセス https://blog.smartdrive.co.jp/smartdrive-culture-f82ac9b1bcd6【事業内容】 弊社はデバイスやそこに組み込むソフトウェアの開発から、スマホアプリ（iOS/Android）やウェブサービスまで、幅広いレイヤーで開発を行なっています。そのため、社員のバックグラウンドも、メーカー、インターネット企業、ゲーム、航空宇宙、コンサルなど様々です。
     .why-content
       %h2 なぜやっているのか
-      %p.sentence 従来の自動車業界は大手車メーカーから系列会社へと縦割りな構造ですが、弊社はそこに横串を通すようなプラットフォーマーの立ち位置でユーザーにコネクテッドカーサービスを提供する立ち位置を目指しています。ユーザーがどこのメーカーの車に乗っていても、どこからどこに乗り換えようとも、シームレスに利用できるサービスを提供をし、車やその他移動体における移動体験にイノベーションを起こしていきます。また、ドライバーによる安全運転やエコ運転がちゃんと評価され、それによるメリットも享受できるという仕組みを構築しようとしています。ドライバーひとりひとりの運転がより安全になり、事故が減っていくことで、世界がもっと安心できる、住みやすい場所になっていく。そのためのしくみやサービスをつくって提供していくこと、それが弊社の事業です。
+      %p 従来の自動車業界は大手車メーカーから系列会社へと縦割りな構造ですが、弊社はそこに横串を通すようなプラットフォーマーの立ち位置でユーザーにコネクテッドカーサービスを提供する立ち位置を目指しています。ユーザーがどこのメーカーの車に乗っていても、どこからどこに乗り換えようとも、シームレスに利用できるサービスを提供をし、車やその他移動体における移動体験にイノベーションを起こしていきます。また、ドライバーによる安全運転やエコ運転がちゃんと評価され、それによるメリットも享受できるという仕組みを構築しようとしています。ドライバーひとりひとりの運転がより安全になり、事故が減っていくことで、世界がもっと安心できる、住みやすい場所になっていく。そのためのしくみやサービスをつくって提供していくこと、それが弊社の事業です。
     .requirements
       %h2 こんなことをやります
-      %p.sentence エンタープライズおよびコンシューマー向け、両方（またはいずれか）のプロダクトマネジメントを担当していただきます。
-  .latest-feeds
+      %p エンタープライズおよびコンシューマー向け、両方（またはいずれか）のプロダクトマネジメントを担当していただきます。
+  .contents--left__feeds--latest
     %h2 会社の注目の投稿
-    %ul.feeds
-      %li.each-feed
-        =image_tag "wantedly22b.png", class: 'feed-image'
-        %small イチオシ
-        .feed-title 開発にスクラムを導入した経緯と今後について
-        .feed-writer
-          =image_tag "wlogo.png", class: "writer-img"
-          .writer-name 水田雅也
-          .writer-position 営業部第一チーム
-      %li.each-feed
-        =image_tag "wantedly22b.png", class: 'feed-image'
-        %small イチオシ
-        .feed-title 開発にスクラムを導入した経緯と今後について
-        .feed-writer
-          =image_tag "wlogo.png", class: "writer-img"
-          .writer-name 水田雅也
-          .writer-position 営業部第一チーム
-      %li.each-feed
-        =image_tag "wantedly22b.png", class: 'feed-image'
-        %small イチオシ
-        .feed-title 開発にスクラムを導入した経緯と今後について
-        .feed-writer
-          =image_tag "wlogo.png", class: "writer-img"
-          .writer-name 水田雅也
-          .writer-position 営業部第一チーム
-  .project-info
-    %table.project-information
-      %tr.chart-bar
-        %td.chart-top{colspan: 2} 募集要項
-      %tr.chart-bar
-        %td.chart-left 探している人
-        %td.chart-right webエンジニア
-      %tr.chart-bar
-        %td.chart-left 採用形態
-        %td.chart-right 中途採用
-      %tr.chart-bar
-        %td.chart-left 募集の特徴
-        %td.chart-right ランチご馳走します
-      %tr.chart-bar
-        %td.chart-top{colspan: 2} 会社情報
-      %tr.chart-bar
-        %td.chart-left 創業者
-        %td.chart-right 村田禎介
-      %tr.chart-bar
-        %td.chart-left 設立年月
-        %td.chart-right 1935年3月16日
-      %tr.chart-bar
-        %td.chart-left 社員数
-        %td.chart-right 100人
-      %tr.chart-bar
-        %td.chart-left 関連業界
-        %td.chart-right 製造業
-      %tr.chart-bar
-        %td.chart-bottom{colspan: 2}
+    %ul
+      %li.contents--left__feeds--latest__each__feed
+        =image_tag "wantedly22b.png", class: 'contents--left__feeds--latest__each__feed__image'
+        %small.contents--left__feeds--latest__each__feed__tag--small イチオシ
+        .contents--left__feeds--latest__each__feed__title 開発にスクラムを導入した経緯と今後について
+        .contents--left__feeds--latest__each__feed__writer
+          =image_tag "wlogo.png", class: "contents--left__feeds--latest__each__feed__writer__img"
+          .contents--left__feeds--latest__each__feed__writer__name 水田雅也
+          .contents--left__feeds--latest__each__feed__writer__position 営業部第一チーム
+  .project__info
+    %table.project__info__table
+      %tr
+        %td.project__info__table__chart--top{colspan: 2} 募集要項
+      %tr
+        %td.project__info__table__chart--left 探している人
+        %td.project__info__table__chart--right webエンジニア
+      %tr
+        %td.project__info__table__chart--left 採用形態
+        %td.project__info__table__chart--right 中途採用
+      %tr
+        %td.project__info__table__chart--left 募集の特徴
+        %td.project__info__table__chart--right ランチご馳走します
+      %tr
+        %td.project__info__table__chart--top{colspan: 2} 会社情報
+      %tr
+        %td.project__info__table__chart--left 創業者
+        %td.project__info__table__chart--right 村田禎介
+      %tr
+        %td.project__info__table__chart--left 設立年月
+        %td.project__info__table__chart--right 2018年3月21日
+      %tr
+        %td.project__info__table__chart--left 社員数
+        %td.project__info__table__chart--right 100人
+      %tr
+        %td.project__info__table__chart--left 関連業界
+        %td.project__info__table__chart--right 製造業
+      %tr
+        %td.project__info__table__chart--bottom{colspan: 2}
           =link_to 'https://www.google.co.jp/' do
             ? もっと知りたいリクエスト
-    .entry-btn-bottom 話を聞きに行きたい
-    .later-btn-bottom あとで見る
+    .entry__btn--bottom 話を聞きに行きたい
+    .later__btn--bottom あとで見る
     %p 現在10人がエントリーしています
     %h4 尚、エントリー状況が他ユーザに公開されることはありません。
     =link_to 'https://www.google.co.jp/' do
       さらに詳しく >
-    .bottom-header
+    .supporter--bottom
       %h2 応援している人(1)
       %h3
       =link_to 'https://www.google.co.jp/' do
         全員みる
-    .support-btn-bottom 応援する
+    .support__btn--bottom 応援する
     %h4 応援について詳しく >
-    %ul.supporters-bottom
+    %ul.support__members--bottom
       %li
-        =image_tag "wlogo.png", class: "supporters-bottom-img"
+        =image_tag "wlogo.png", class: "support__members--bottom__img"
       %li
-        =image_tag "wlogo.png", class: "supporters-bottom-img"
+        =image_tag "wlogo.png", class: "support__members--bottom__img"
       %li
-        =image_tag "wlogo.png", class: "supporters-bottom-img"
+        =image_tag "wlogo.png", class: "support__members--bottom__img"
+
     %h4
       応援している人の数が多いと、
       %span

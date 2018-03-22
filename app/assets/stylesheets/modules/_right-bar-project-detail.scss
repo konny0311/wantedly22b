@@ -1,22 +1,21 @@
-@import "config/variables";
 
-.right-contents {
+.contents--right {
   width: calc(#{$width-contents-centered} - #{$width-left-contents} - 2px);
   border-left: solid thin silver;
   position: absolute;
   right: 0;
-  &-interests {
+  &__interests {
     width: $width-right-btn;
     margin: 0 10px;
-    &-top {
+    &--top {
       height: $height-right-contents-interests-top;
       position: sticky;
       top: 0;
       z-index: 100;
       background-color: $color-background-right-top;
-      &-centered {
+      &--centered {
         height: 100%;
-        .entry-btn {
+        &__entry__btn {
           width: $width-right-btn;
           background-color: $color-entry-btn;
           color: $color-smalltags;
@@ -27,23 +26,23 @@
           position: absolute;
           top: 10px;
         }
-        .entry-status {
+        &__entry__status {
           font-size: $fontsize-entry-status;
           font-weight: bold;
           position: absolute;
           top: 70px;
         }
-        .entry-notice {
+        &__entry__notice {
           font-size: $fontsize-entry-status;
           position: absolute;
           top: 90px;
         }
-        .entry-detail {
+        &__entry__detail {
           font-size: $fontsize-entry-status;
           position: absolute;
           top: 105px;
         }
-        .check-later-btn {
+        &__check--later__btn {
           width: $width-right-btn;
           background-color: white;
           color: black;
@@ -57,7 +56,7 @@
         }
       }
     }
-    &-middle {
+    &--middle {
       height: $height-right-contents-interests-title;
       border: solid thin silver;
       border-left: none;
@@ -73,10 +72,10 @@
         padding: 14px 10px 14px 0;
       }
     }
-    &-bottom {
+    &--bottom {
       height: 300px;
       font-size: $fontsize-entry-status;
-      .cheer-btn {
+      &__cheer__btn {
         width: $width-right-btn;
         background-color: $color-cheer-btn;
         border: solid thin #1e7785;
@@ -89,25 +88,25 @@
         position: absolute;
         left: 12px;
       }
-      .cheer-detail {
+      &__cheer__detail {
         font-size: $fontsize-entry-status;
         position: absolute;
         top: 300px;
       }
-      .cheering-member-box {
+      &__cheering__member__box {
         height: $height-cheering-member-box;
         width: calc(#{$width-contents-centered} - #{$width-left-contents} - 22px);
         margin-top: 10px;
         position: absolute;
         top: 320px;
-        .supporters-right-img {
+        &__supporters--right__img {
           float: left;
           margin: 10px 10px 0 0;
           height: 40px;
           width: 40px;
         }
       }
-      .cheering-notice {
+      &__cheering__notice {
         width: $width-right-btn;
         position: absolute;
         top: 500px;
@@ -117,7 +116,7 @@
       }
     }
   }
-  &-map {
+  &__map {
     height: $height-right-contents-interests-title;
     border-top: solid thin silver;
     border-bottom: solid thin silver;
@@ -127,7 +126,7 @@
       padding: 14px 14px;
     }
   }
-  &-map-detail {
+  &__map__detail {
     font-size: $fontsize-address;
     width: $width-right-btn;
     margin: 0 10px;
@@ -138,7 +137,7 @@
       border:none;
     }
   }
-  &-projects-introduction {
+  &__projects__introduction {
     height: $height-right-contents-interests-title;
     width: $width-right-btn;
     border-top: solid thin silver;
@@ -152,19 +151,19 @@
       padding: 14px 14px;
     }
   }
-  &-other-projects {
+  &__projects--others {
     min-height: 300px;
-    .each-project {
+    &--each {
       min-height: 100px;
       width: $width-right-btn;
       border-bottom: solid thin silver;
-      .ep-imagebox {
+      &__imagebox {
         height: 67px;
         width: 67px;
         margin: 20px 0 0 10px;
         float: left;
       }
-      .ep-sentencebox {
+      &__sentencebox {
         height: $height-sentencebox;
         width: $width-sentencebox;
         margin: 15px 0;
@@ -172,11 +171,11 @@
         right: 40px;
         font-weight: bold;
         font-size: 13px;
-        .ep-company {
+        &__company {
           min-width: 100px;
           color: $color-ep-company;
         }
-        .ep-title {
+        &__title {
           min-width: 100px;
         }
       }
