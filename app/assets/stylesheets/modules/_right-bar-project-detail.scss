@@ -15,6 +15,11 @@
       background-color: $color-background-right-top;
       &--centered {
         height: 100%;
+        &__entry__btn:hover {
+          filter: alpha(opacity=70);
+          -moz-opacity: 0.7;
+          opacity: 0.7;
+        }
         &__entry__btn {
           width: $width-right-btn;
           background-color: $color-entry-btn;
@@ -42,6 +47,11 @@
           position: absolute;
           top: 105px;
         }
+        &__check--later__btn:hover {
+          filter: alpha(opacity=70);
+          -moz-opacity: 0.7;
+          opacity: 0.7;
+        }
         &__check--later__btn {
           width: $width-right-btn;
           background-color: white;
@@ -53,6 +63,10 @@
           padding: 10px 0;
           position: absolute;
           top: 130px;
+          .check::before {
+            font-family: "FontAwesome";
+	          content: '\f00c';
+          }
         }
       }
     }
@@ -75,6 +89,11 @@
     &--bottom {
       height: 300px;
       font-size: $fontsize-entry-status;
+      &__cheer__btn:hover {
+        filter: alpha(opacity=70);
+        -moz-opacity: 0.7;
+        opacity: 0.7;
+      }
       &__cheer__btn {
         width: $width-right-btn;
         background-color: $color-cheer-btn;
