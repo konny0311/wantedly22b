@@ -14,6 +14,8 @@ body{
 .contents{
   clear: both;
   height: 2000px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #ddd;
   &__carousel{
     width: 100%;
     height: 450px;
@@ -22,16 +24,164 @@ body{
   &__main{
     width: 900px;
     margin: 50px auto 0;
-    background: #999;
-    height:1550px;
+    height: 1550px;
     &__left{
+      float: left;
       width: 300px;
       background-color: #fff;
       height: 100%;
     }
     &__right{
+      float: right;
       width: 600px;
       height: 100%;
+      &__nav{
+        border-bottom: solid 1px #ddd;
+        height: 30px;
+        p{
+          float: left;
+          width:60px;
+          font-size: 9px;
+          color: #bbb;
+        }
+        &__genre{
+          float: right;
+          width: 360px;
+          p{
+            font-size: 13px;
+            color: #bbb;
+            padding-left: 50px;
+          }
+          ul{
+            width: 250px;
+            float: right;
+            li{
+              margin-left: 30px;
+              display: inline-block;
+              font-size: 14px;
+              a{
+                text-decoration: none;
+                color: #000;
+              }
+              a:hover {
+                color: #00A4BB;
+              }
+            }
+          }
+        }
+      }
+      &__item{
+        height: 1400px;
+        width: 100%;
+        background: #fff;
+        margin-top: 30px;
+        overflow: auto;
+        &__category{
+          border-bottom: solid 1px #ddd;
+          height: 530px;
+          margin-bottom: 50px;
+          .cover-image{
+            height: 200px;
+            width: 100%;
+            background-color: #999;
+
+          }
+          .occupation{
+            margin-top: 20px;
+            span{
+              border: 1px solid #00A4BB;
+              color: #00A4BB;
+              font-size: 14px;
+              border-radius: 3px;
+              padding: 3px;
+            }
+          }
+          .catch-copy{
+            margin-top: 10px;
+            h1{
+              font-size: 22px;
+              font-weight: bold;
+            }
+          }
+          .sentence{
+            margin-top: 10px;
+            p{
+              color: #9DA0A4;
+            }
+          }
+          .profile-image{
+            float: left;
+            margin-top: 50px;
+            a{
+
+            }
+          }
+          .company-name{
+            float: left;
+            margin: 50px 0 0 10px;
+          }
+          .action{
+            width: 200px;
+            float: right;
+            margin-top: 55px;
+            .date{
+              width: 90px;
+              height: 100%;
+              i{
+                float: left;
+                height: 15px;
+                width: 15px;
+                color: #bbb;
+                font-size: 15px;
+              }
+              p{
+                float: left;
+                width: 50px;
+                font-size: 9px;
+                padding: 0 10px 0 3px;
+                color: #9DA0A4;
+                border-right: 1px solid #9DA0A4;
+              }
+            }
+            .icon{
+              float: right;
+              width: 110px;
+              i{
+                float: right;
+                height: 20px;
+                width: 20px;
+                font-size: 20px;
+                color: #bbb;
+                margin: 0 5px 0 20px;
+              }
+            }
+          }
+        }
+      }
+      &__item::-webkit-scrollbar{
+        display:none;
+      }
+      &__order{
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+        ul{
+          text-align: center;
+          li{
+            display: inline-block;
+            padding: 10px;
+            font-size: 14px;
+            color: #bbb;
+          }
+        }
+        p{
+          position: absolute;
+          right: 10px;
+          top: 5px;
+          color: #bbb;
+        }
+      }
     }
   }
 }
