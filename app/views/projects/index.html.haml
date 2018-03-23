@@ -2,20 +2,20 @@
   .main-view
     = render 'shared/header'
     .contents
-      .contents__carousel
+      .carousel
         %p
           カルーセル実装予定
-      .contents__main
-        .contents__main__left
+      .main
+        .left
           .left__search
           .left__field
           .left__region
           .left__character
-        .contents__main__right
-          .contents__main__right__nav
+        .right
+          .nav
             %p
               10/8000
-            .contents__main__right__nav__genre
+            .nav__genre
               %p
                 並び替え
               %ul
@@ -25,24 +25,24 @@
                   = link_to "新着", root_path
                 %li
                   = link_to "人気", root_path
-          .contents__main__right__item
-            .contents__main__right__item__category
-              .cover-image
-              .occupation
+          .item
+            .item__category
+              .item__category__image
+              .item__category__occupation
                 %span
                   エンジニア
-              .catch-copy
+              .item__category__catch-copy
                 %h1
                   今挑戦するからこそ、将来価値のある人材に成長するエンジニア採用
-              .sentence
+              .item__category__sentence
                 %p
                   エンジニア（フロントエンド） ◎業務内容 ・THEO および、関連するサービスのWeb フロントエンドの構築 ・Vue.js, React 等を使用した、SPA(Single Page Application) の実装 ・
-              .profile-image
+              .item__category__company-image
                 = link_to image_tag("#", alt: "image", height: "50px"), root_path
-              .company-name
+              .item__category__company-name
                 %p
                   株式会社お金のデザイン
-              .action
+              .item__category__action
                 .date
                   %i.fa.fa-clock-o
                   %p
@@ -52,23 +52,23 @@
                     %i.fa.fa-bookmark-o
                   = link_to root_path do
                     %i.fa.fa-bullhorn
-            .contents__main__right__item__category
-              .cover-image
-              .occupation
+            .item__category
+              .item__category__image
+              .item__category__occupation
                 %span
                   エンジニア
-              .catch-copy
+              .item__category__catch-copy
                 %h1
                   今挑戦するからこそ、将来価値のある人材に成長するエンジニア採用
-              .sentence
+              .item__category__sentence
                 %p
                   エンジニア（フロントエンド） ◎業務内容 ・THEO および、関連するサービスのWeb フロントエンドの構築 ・Vue.js, React 等を使用した、SPA(Single Page Application) の実装 ・
-              .profile-image
+              .item__category__profile-image
                 = link_to image_tag("#", alt: "image", height: "50px"), root_path
-              .company-name
+              .item__category__company-name
                 %p
                   株式会社お金のデザイン
-              .action
+              .item__category__action
                 .date
                   %i.fa.fa-clock-o
                   %p
@@ -78,23 +78,23 @@
                     %i.fa.fa-bookmark-o
                   = link_to root_path do
                     %i.fa.fa-bullhorn
-            .contents__main__right__item__category
-              .cover-image
-              .occupation
+            .item__category
+              .item__category__image
+              .item__category__occupation
                 %span
                   エンジニア
-              .catch-copy
+              .item__category__catch-copy
                 %h1
                   今挑戦するからこそ、将来価値のある人材に成長するエンジニア採用
-              .sentence
+              .item__category__sentence
                 %p
                   エンジニア（フロントエンド） ◎業務内容 ・THEO および、関連するサービスのWeb フロントエンドの構築 ・Vue.js, React 等を使用した、SPA(Single Page Application) の実装 ・
-              .profile-image
+              .item__category__profile-image
                 = link_to image_tag("#", alt: "image", height: "50px"), root_path
-              .company-name
+              .item__category__company-name
                 %p
                   株式会社お金のデザイン
-              .action
+              .item__category__action
                 .date
                   %i.fa.fa-clock-o
                   %p
@@ -104,7 +104,7 @@
                     %i.fa.fa-bookmark-o
                   = link_to root_path do
                     %i.fa.fa-bullhorn
-          .contents__main__right__order
+          .order
             %ul
               %li
                 1
