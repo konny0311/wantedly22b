@@ -5,7 +5,8 @@
 .company__info
   =image_tag "wlogo.png", class: "company__info__image__top"
   %p.company__info__name
-    = @company.name
+    =link_to "https://www.google.co.jp/" do
+      = @company.name
   %ul.company__info__share__tags
     %li.facebook いいね ! 0
     %li.twitter ツイート 0

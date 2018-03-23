@@ -30,7 +30,7 @@
       .contents--right__interests--bottom__cheering__notice
         応援してくれる人の数が多いと、
         %span
-        =link_to 'https://www.google.co.jp/' do
+        =link_to 'https://www.wantedly.com/companies/ranking' do
           会社ランキング
         にランクインします
     .contents--right__map
@@ -43,9 +43,10 @@
     %ul.contents--right__projects--others
     - @projects.each do |project|
       %li.contents--right__projects--others--each
-        =image_tag @company.logo, class: "contents--right__projects--others--each__imagebox"
-        .contents--right__projects--others--each__sentencebox
-          .contents--right__projects--others--each__sentencebox__company
-            =@company.name
-          .contents--right__projects--others--each__sentencebox__title
-            =project.title
+        =link_to "/projects/#{project.id}" do
+          =image_tag @company.logo, class: "contents--right__projects--others--each__imagebox"
+          .contents--right__projects--others--each__sentencebox
+            .contents--right__projects--others--each__sentencebox__company
+              =@company.name
+            .contents--right__projects--others--each__sentencebox__title
+              =project.title
