@@ -7,25 +7,30 @@
   background-color: #fff;
   z-index: 200;
   display: none;
+  opacity: 0.9;
 }
 
-#modal_window__projects__entry {
-  width: 300px;
-  height: 300px;
+#modal_window--close {
+  width: 50px;
+  height: 20px;
   position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
+  top: 20px;
+  right: 20px;
   border: solid thin silver;
   z-index: 300;
   display: none;
 
-  &--close {
-    width: 30px;
-    height: 30px;
-    float: right;
-    border: solid thin silver;
-  }
+}
+#modal_window__projects__entry {
+  width: 680px;
+  height: 680px;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  background-color: #fff;
+  border: solid thin silver;
+  z-index: 300;
+  display: none;
 
   &--inside {
     width: 200px;
