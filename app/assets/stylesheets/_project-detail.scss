@@ -53,6 +53,11 @@
     .facebook {
        background-color: $color-facebook;
      }
+     .twitter {
+       iframe {
+         height: 25px;
+       }
+     }
     .hatena {
       padding: 2px 10px;
       font-weight: bold;
