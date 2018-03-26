@@ -24,7 +24,7 @@
   %ul.company--under--bar__list
     %li.posted_date
       %p
-        =@project.updated_at
+        =@project.updated_at.to_s(:date)
     %li.number_of_connected_friends
       %p 社員との共通の友達(0)
     %li.number_of_views
