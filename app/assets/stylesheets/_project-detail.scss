@@ -317,6 +317,11 @@
           font-size: 10px;
           color: #9DA0A4;
           margin: 10px 0;
+          #entry__detail:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            cursor: hand;
+          }
         }
         a {
           font-size: 11px;
