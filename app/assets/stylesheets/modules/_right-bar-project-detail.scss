@@ -42,7 +42,12 @@
           position: absolute;
           top: 90px;
         }
-        &__entry__detail {
+        .entry__detail:hover {
+          text-decoration: underline;
+          cursor: pointer;
+          cursor: hand;
+        }
+        .entry__detail {
           font-size: $fontsize-entry-status;
           position: absolute;
           top: 105px;
@@ -107,7 +112,12 @@
         position: absolute;
         left: 12px;
       }
-      &__cheer__detail {
+      .support__detail:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        cursor: hand;
+      }
+      .support__detail {
         font-size: $fontsize-entry-status;
         position: absolute;
         top: 300px;

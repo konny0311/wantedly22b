@@ -5,8 +5,8 @@
         .contents--right__interests--top--centered__entry__btn 話を聞きに行きたい
         .contents--right__interests--top--centered__entry__status 現在10人がエントリーしています
         .contents--right__interests--top--centered__entry__notice エントリー状況は他のユーザーに公開されません
-        .contents--right__interests--top--centered__entry__detail さらに詳しく >
-        #entry__detail さらに詳しく >
+        -# .contents--right__interests--top--centered__entry__detail さらに詳しく >
+        .entry__detail さらに詳しく >
         .contents--right__interests--top--centered__check--later__btn
           あとで見る
     .contents--right__interests--middle
@@ -17,8 +17,7 @@
       .contents--right__interests--bottom__cheer__btn
         %i.fa.fa-bullhorn
         応援する
-      =link_to 'https://www.google.co.jp/', class:"contents--right__interests--bottom__cheer__detail" do
-        応援について詳しく>
+      .support__detail 応援について詳しく>
       %ul.contents--right__interests--bottom__cheering__member__box
         %li
           =image_tag "wlogo.png", class: "contents--right__interests--bottom__cheering__member__box__supporters--right__img"

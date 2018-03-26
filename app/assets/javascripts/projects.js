@@ -6,11 +6,18 @@ $(function() {
     this.innerHTML= "<span class='check'>保存しました</span>"
   })
 
-  $('#entry__detail').on('click', function(){
+  $('.entry__detail').on('click', function(){
     $('#overlay, #modal_window--close, #modal_window__projects__entry').fadeIn();
   })
   $('#overlay, #modal_window--close').on('click', function(){
     $('#overlay, #modal_window--close, #modal_window__projects__entry').fadeOut();
+  })
+
+  $('.support__detail').on('click', function(){
+    $('#overlay,  #modal_window__projects__support').fadeIn();
+  })
+  $('#overlay').on('click', function(){
+    $('#overlay, #modal_window__projects__support').fadeOut();
   })
 
 })
