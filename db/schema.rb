@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180324004307) do
+ActiveRecord::Schema.define(version: 20180326090046) do
 
   create_table "companies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                        null: false
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20180324004307) do
     t.text     "profile",       limit: 65535, null: false
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+    t.text     "address",       limit: 65535, null: false
     t.index ["name"], name: "index_companies_on_name", using: :btree
   end
 
