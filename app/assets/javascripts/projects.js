@@ -9,7 +9,7 @@ $(function() {
   $('#entry__detail').on('click', function(){
     $('#overlay, #modal_window--close, #modal_window__projects__entry').fadeIn();
   })
-  $('#modal_window--close').on('click', function(){
+  $('#overlay, #modal_window--close').on('click', function(){
     $('#overlay, #modal_window--close, #modal_window__projects__entry').fadeOut();
   })
 
