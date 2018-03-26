@@ -30,6 +30,10 @@
           padding: 10px 0;
           position: absolute;
           top: 10px;
+          .entry::before {
+            font-family: "FontAwesome";
+            content: '\f00c';
+          }
         }
         &__entry__status {
           font-size: $fontsize-entry-status;
@@ -111,6 +115,11 @@
         margin-top: 10px;
         position: absolute;
         left: 12px;
+        .support::before {
+          font-family: "FontAwesome";
+          content: '\f00c';
+        }
+
       }
       .support__detail:hover {
         text-decoration: underline;

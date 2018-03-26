@@ -286,6 +286,10 @@
           text-align: center;
           padding: 10px 0;
           margin: 20px 20px 0 0;
+          .entry::before {
+            font-family: "FontAwesome";
+            content: '\f00c';
+          }
         }
         .later__btn--bottom:hover {
           filter: alpha(opacity=70);
@@ -354,6 +358,10 @@
           font-size: 16px;
           text-align: center;
           padding: 10px 0;
+          .support::before {
+            font-family: "FontAwesome";
+            content: '\f00c';
+          }
         }
         .support__detail:hover {
           text-decoration: underline;
