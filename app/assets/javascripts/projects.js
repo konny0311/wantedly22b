@@ -2,23 +2,27 @@ $(function() {
   // 保存ボタン
   var c1 = $('.contents--right__interests--top--centered__check--later__btn')[0];
   var c2 = $('.later__btn--bottom')[0];
+  var check = "<span class='check'>保存しました</span>";
   $([c1, c2]).on('click', function(){
-    c1.innerHTML= "<span class='check'>保存しました</span>"
-    c2.innerHTML= "<span class='check'>保存しました</span>"
+    // console.log(span-check)
+    c1.innerHTML= check;
+    c2.innerHTML= check;
   })
   // エントリーボタン
   var e1 = $('.contents--right__interests--top--centered__entry__btn')[0];
   var e2 = $('.entry__btn--bottom')[0];
+  var entry = "<span class='entry'>エントリーしました</span>";
   $([e1, e2]).on('click', function(){
-    e1.innerHTML= "<span class='entry'>エントリーしました</span>"
-    e2.innerHTML= "<span class='entry'>エントリーしました</span>"
+    e1.innerHTML= entry;
+    e2.innerHTML= entry;
   })
   // 応援ボタン
   var s1 = $('.contents--right__interests--bottom__cheer__btn')[0];
   var s2 = $('.support__btn--bottom')[0];
+  var support = "<span class='support'>応援しました</span>";
   $([s1, s2]).on('click', function(){
-    s1.innerHTML= "<span class='support'>応援しました</span>"
-    s2.innerHTML= "<span class='support'>応援しました</span>"
+    s1.innerHTML= support;
+    s2.innerHTML= support;
   })
   // modal_window
   var modal_window_entry = $('#overlay, #modal_window__projects__entry');
