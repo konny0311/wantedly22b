@@ -1,0 +1,90 @@
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $color-overlay;
+  z-index: 200;
+  display: none;
+  opacity: 0.9;
+}
+#modal-window__projects__entry {
+  width: $width-modal_window__projects__entry;
+  height: $width-modal_window__projects__entry;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  background-color: $color-overlay;
+  border: solid thin silver;
+  z-index: 300;
+  border-radius: 6px;
+  box-shadow: $box-shadow-modal_window;
+  display: none;
+  &--inside {
+    width: 100%;
+    height: 100%;
+    @include normal-font;
+    font-size: $fontsize-normal-modal_window;
+    font-weight: 600;
+    &--detail {
+      padding: 15px 20px;
+      border-bottom: solid thin silver;
+    }
+    &--bottom {
+      padding: 20px;
+      p {
+        font-weight: normal;
+      }
+      &__box {
+        width: 558px;
+        height: 444px;
+        margin: 20px 0;
+        padding: 0 40px 40px 40px;
+        background-color: #f5f5f5;
+        &-content {
+          padding-top: 40px;
+          .header {
+            text-align: center;
+            font-size: $fontsize-normal-modal_window_header;
+            font-weight: 600;
+            color: $fontsize-normal-modal_window_header;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#modal-window__projects__support {
+  width: $width-modal_window__projects__entry;
+  height: $height-modal_window__projects__support;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  background-color: $color-overlay;
+  border: solid thin silver;
+  z-index: 300;
+  border-radius: 6px;
+  box-shadow: $box-shadow-modal_window;
+  display: none;
+  &--inside {
+    width: 100%;
+    height: 100%;
+    font-family: "lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
+    font-style: normal;
+    font-size: $fontsize-normal-modal_window;
+    font-weight: 600;
+    &--detail {
+      padding: 15px 20px;
+      border-bottom: solid thin silver;
+    }
+    &--bottom {
+      padding: 20px;
+      p {
+        font-weight: normal;
+      }
+    }
+  }
+}

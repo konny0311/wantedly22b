@@ -1,23 +1,41 @@
 .project__title
   %span.project__title--job__type__tag キャリアチェンジしたい方
   %p.project__title--sentence
-    エンジニアにキャリアチェンジしたい方歓迎！CTOとお話しませんか？
+    =@project.title
 .company__info
   =image_tag "wlogo.png", class: "company__info__image__top"
-  %p.company__info__name 株式会社Wantedly
+  %p.company__info__name
+    =link_to "https://www.google.co.jp/" do
+      = @company.name
   %ul.company__info__share__tags
-    %li.facebook いいね ! 0
-    %li.twitter ツイート 0
-    %li.hatena B! Bookmark 0
+    %li.facebook
+      %iframe{:allowtransparency => "true", :frameborder => "0", :height => "21", :scrolling => "no", :src => "https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fapps.facebook.com%2Fwantedly%2F%3Fref%3Dbr_rs&width=83&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId", :style => "border:none;overflow:hidden", :width => "83"}
+    %li.twitter
+      %a.twitter-share-button{"data-lang" => "ja", "data-show-count" => "false", "data-text" => "#{@project.title}", :href => "https://twitter.com/share?ref_src=twsrc%5Etfw"}
+        Tweet
+      %script{:async => "", :charset => "utf-8", :src => "https://platform.twitter.com/widgets.js"}
+    %li.hatena
+      %a.hatena-bookmark-button{"data-hatena-bookmark-lang" => "en", "data-hatena-bookmark-layout" => "basic-label-counter", :href => "http://b.hatena.ne.jp/entry/", :title => "このエントリーをはてなブックマークに追加"}
+        %img{:alt => "このエントリーをはてなブックマークに追加", :height => "20", :src => "https://b.st-hatena.com/images/entry-button/button-only@2x.png", :style => "border: none;", :width => "20"}/
+      %script{:async => "async", :charset => "utf-8", :src => "https://b.st-hatena.com/js/bookmark_button.js", :type => "text/javascript"}
+
 =image_tag "wantedly22b.png", class: 'company__info__image--big'
 .company--under--bar
   %ul.company--under--bar__list
     %li.posted_date
-      %p 2018/03/17
+      %p
+        %i.fa.fa-clock-o
+        =@project.updated_at.to_s(:date)
     %li.number_of_connected_friends
-      %p 社員との共通の友達(0)
+      %p
+        %i.fa.fa-users
+        社員との共通の友達(0)
     %li.number_of_views
-      %p 1000
+      %p
+        %i.fa.fa-eye
+        1000
   .company--under--bar__support--box
-    .company--under--bar__support--box__support--btn 応援する
+    .company--under--bar__support--box__support--btn
+      %i.fa.fa-bullhorn
+      応援する
     .company--under--bar__support--box__support--num 10

@@ -13,6 +13,7 @@ $height-right-contents-interests-top: 190px;
 $height-right-contents-interests-title: 50px;
 $height-cheering-member-box: 160px;
 $height-sentencebox: 80px;
+$height-modal_window__projects__support: 150px;
 
 // width
 $width-contents-centered: 980px;
@@ -22,6 +23,8 @@ $width-sentencebox: 200px;
 $width-chart-left: 120px;
 $width-right-btn: 290px;
 $length-map: 280px;
+$width-modal_window__projects__entry: 680px;
+
 // fontsize
 $fontsize-project-title: 26px;
 $fontsize-smalltags: 11px;
@@ -36,6 +39,8 @@ $fontsize-entry-status: 11px;
 $fontsize-address: 14px;
 $fontsize-support-btn: 13px;
 $fontsize-support-num: 16px;
+$fontsize-normal-modal_window: 14px;
+$fontsize-normal-modal_window_header: 26px;
 
 // color
 $color-company-name: #00A4BB;
@@ -56,3 +61,8 @@ $color-hatena: #00a4de;
 $color-chart-top: #f5f5f5;
 $color-chart-bottom: #006F8E;
 $color-background-right-top: rgba(255,255,255,0.9);
+$color-overlay: #fff;
+$fontsize-normal-modal_window_header: #00A4BB;
+
+// others
+$box-shadow-modal_window: 0 0 20px rgba(0,0,0,0.4);

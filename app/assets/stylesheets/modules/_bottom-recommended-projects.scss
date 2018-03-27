@@ -1,34 +1,37 @@
-@import "config/variables";
-
-.bottom-recommended-projects-box {
+.projects--recommended--bottom__box {
 float: left;
 border-top: solid thin silver;
 height: 100%;
 width: 153%;
-  .projects-row-wrapper {
+  &__wrapper__row {
     color: $color-company-members;
     font-size: $fontsize-company-name;
     font-weight: bold;
     margin-top: 30px;
-    .bottom-each-recommended-project {
+    &__lists--each:hover {
+      filter: alpha(opacity=70);
+      -moz-opacity: 0.7;
+      opacity: 0.7;
+    }
+    &__lists--each {
       float: left;
       margin: 20px 20px 20px 0;
       width: 223px;
-      .bottom-recommended-project-img {
+      &__img--big {
         height: 90px;
         width: 223px;
       }
-      .bottom-recommended-project-title {
+      &__title {
         margin-top: 10px;
         font-size: 16px;
         font-weight: 600;
       }
-      .bottom-recommended-project-company-img {
+      &__img--company {
         float: left;
         height: 30px;
         width: 30px;
       }
-      .bottom-recommended-project-company-name {
+      &__name {
         float: left;
         font-size: 13px;
         color: #9DA0A4;
@@ -36,10 +39,11 @@ width: 153%;
       }
     }
   }
-  .bottom-recent-projects-box {
+  &--recent {
     float: left;
     border-top: solid thin silver;
     height: 100%;
     width: 100%;
+    margin-bottom: 20px;
   }
 }
