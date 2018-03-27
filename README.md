@@ -39,6 +39,7 @@
 ### association
 - belongs_to :company
 - has_many :messages
+- has_many :supports
 
 ## images テーブル
 
@@ -87,6 +88,7 @@
 - has many :academics
 - has many :other_actions
 - has many :skills through: :abilities
+- has many :supports
 
 
 ## certificatesテーブル
@@ -336,3 +338,15 @@ Column|Type|Options|
 ### association
 - belong_to :user
 - belong_to :company
+
+<!--projectsとusersの中間テーブル-->
+## supportsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer||
+|project_id|integer||
+
+### association
+- belong_to :user
+- belong_to :projects
