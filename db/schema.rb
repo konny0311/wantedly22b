@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180326090046) do
+ActiveRecord::Schema.define(version: 20180327103153) do
 
   create_table "companies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                        null: false
@@ -53,16 +53,24 @@ ActiveRecord::Schema.define(version: 20180326090046) do
   end
 
   create_table "projects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "title",                     null: false
-    t.text     "content",     limit: 65535, null: false
-    t.string   "job_title",                 null: false
-    t.string   "job_type",                  null: false
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
-    t.integer  "company_id",                null: false
-    t.text     "requirement", limit: 65535, null: false
+    t.string   "title",                        null: false
+    t.text     "content",        limit: 65535, null: false
+    t.string   "job_title",                    null: false
+    t.string   "job_type",                     null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.integer  "company_id",                   null: false
+    t.text     "requirement",    limit: 65535, null: false
+    t.integer  "supports_count"
     t.index ["job_type"], name: "index_projects_on_job_type", using: :btree
     t.index ["title"], name: "index_projects_on_title", using: :btree
+  end
+
+  create_table "supports", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id",    null: false
+    t.integer  "project_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
