@@ -24,11 +24,18 @@
   %ul.company--under--bar__list
     %li.posted_date
       %p
+        %i.fa.fa-clock-o
         =@project.updated_at.to_s(:date)
     %li.number_of_connected_friends
-      %p 社員との共通の友達(0)
+      %p
+        %i.fa.fa-users
+        社員との共通の友達(0)
     %li.number_of_views
-      %p 1000
+      %p
+        %i.fa.fa-eye
+        1000
   .company--under--bar__support--box
-    .company--under--bar__support--box__support--btn 応援する
+    .company--under--bar__support--box__support--btn
+      %i.fa.fa-bullhorn
+      応援する
     .company--under--bar__support--box__support--num 10
