@@ -23,19 +23,19 @@ $(function() {
     supportBtnRight.innerHTML= support;
     supportBtnBottom.innerHTML= support;
   })
-  // modal_window
-  var modal_window_entry = $('#overlay, #modal-window__projects__entry');
-  var modal_window_support = $('#overlay,  #modal-window__projects__support');
+  // modalWindow
+  var modalWindowEntry = $('#overlay, #modal-window__projects__entry');
+  var modalWindowSupport = $('#overlay,  #modal-window__projects__support');
   $('.entry__detail').on('click', function(){
-    modal_window_entry.fadeIn();
+    modalWindowEntry.fadeIn();
   })
   $('#overlay').on('click', function(){
-    modal_window_entry.fadeOut();
+    modalWindowEntry.fadeOut();
   })
   $('.support__detail').on('click', function(){
-    modal_window_support.fadeIn();
+    modalWindowSupport.fadeIn();
   })
   $('#overlay').on('click', function(){
-    modal_window_support.fadeOut();
+    modalWindowSupport.fadeOut();
   })
 })
