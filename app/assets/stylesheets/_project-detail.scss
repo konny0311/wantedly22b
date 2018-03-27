@@ -4,8 +4,7 @@
   width: $width-contents-centered;
   margin: 0 auto;
   word-break: break-all;
-  font-family: "lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
-  font-style: normal;
+  @include normal-font();
   .project__title {
     height: $height-project-title;
     font-weight: 600;

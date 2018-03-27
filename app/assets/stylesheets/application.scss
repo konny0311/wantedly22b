@@ -6,10 +6,11 @@
 @import "footer/little";
 @import "footer/strong";
 @import "footer/list";
+@import "mixin/normal-font";
 @import "./projects";
 @import "modules/header";
 @import "modules/footer";
-@import "modules/projects__detail__entry";
+@import "modules/projects-detail-entry";
 @import "modules/bottom-recommended-projects";
 @import "modules/right-bar-project-detail";
 @import "./project-detail";
