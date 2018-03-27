@@ -21,17 +21,18 @@ $(function() {
     s2.innerHTML= "<span class='support'>応援しました</span>"
   })
   // modal_window
+  var modal_window_entry = $('#overlay, #modal_window__projects__entry');
+  var modal_window_support = $('#overlay,  #modal_window__projects__support');
   $('.entry__detail').on('click', function(){
-    $('#overlay, #modal_window__projects__entry').fadeIn();
+    modal_window_entry.fadeIn();
   })
   $('#overlay').on('click', function(){
-    $('#overlay, #modal_window__projects__entry').fadeOut();
+    modal_window_entry.fadeOut();
   })
   $('.support__detail').on('click', function(){
-    $('#overlay,  #modal_window__projects__support').fadeIn();
+    modal_window_support.fadeIn();
   })
   $('#overlay').on('click', function(){
-    $('#overlay, #modal_window__projects__support').fadeOut();
+    modal_window_support.fadeOut();
   })
-
 })
