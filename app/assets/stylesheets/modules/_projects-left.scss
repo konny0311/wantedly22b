@@ -1,0 +1,17 @@
+@mixin list-items() {
+  ul{
+    width: 240px;
+    margin-top: 15px;
+    li{
+      padding-left: 15px;
+      margin-bottom: 15px;
+      font-size: 12px;
+    }
+    .add{
+      a{
+        color: $nav-hover;
+        text-decoration: none;
+      }
+    }
+  }
+}
