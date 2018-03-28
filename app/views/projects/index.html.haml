@@ -7,10 +7,31 @@
           カルーセル実装予定
       .main
         .left
-          .left__search
-          .left__field
-          .left__region
-          .left__character
+          .header
+            %p
+              検索条件
+            .subicon
+              = link_to root_path do
+                %i.fa.file-text
+          .body
+            .pulldown-job
+            .pulldown-hiringType
+            .searchBox
+              %input{ type: "text", id: "add-item", placeholder: "地域や特徴などの条件を追加" }
+              =fa_icon 'search', class: 'icon-search'
+            .searchJob
+            .field
+              %p
+                分野
+              .field__items
+            .region
+              %p
+                地域
+              .region__items
+            .character
+              %p
+                特徴
+              .character__items
         .right
           .nav
             %p
