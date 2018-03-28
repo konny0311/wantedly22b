@@ -91,6 +91,13 @@
   &__support--box {
     float: right;
     margin-right: 20px;
+    &__support--btn:hover {
+      filter: alpha(opacity=70);
+      -moz-opacity: 0.7;
+      opacity: 0.7;
+      cursor: pointer;
+      cursor: hand;
+    }
     &__support--btn {
       display: inline-block;
       background-color: $color-background-support-btn;
@@ -102,6 +109,10 @@
       font-size: $fontsize-support-btn;
       font-weight: 600;
       color: $color-support-btn;
+      .support::before {
+        font-family: "FontAwesome";
+        content: '\f00c';
+      }
     }
     &__support--num {
       display: inline-block;

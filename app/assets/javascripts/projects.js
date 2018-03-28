@@ -15,14 +15,22 @@ $(function() {
     entryBtnRight.innerHTML= entry;
     entryBtnBottom.innerHTML= entry;
   })
-  // 応援ボタン
+  // 応援ボタン大
+  var supportBtnTop = $('.company--under--bar__support--box__support--btn')[0];
   var supportBtnRight = $('.contents--right__interests--bottom__cheer__btn')[0];
   var supportBtnBottom = $('.support__btn--bottom')[0];
   var support = "<span class='support'>応援しました</span>";
-  $([supportBtnRight, supportBtnBottom]).on('click', function(){
+  $([supportBtnTop, supportBtnRight, supportBtnBottom]).on('click', function(){
+    supportBtnTop.innerHTML= support;
     supportBtnRight.innerHTML= support;
     supportBtnBottom.innerHTML= support;
   })
+  // // 応援ボタン小
+  // var supportBtnTop = $('.company--under--bar__support--box__support--btn')[0];
+  // var support = "<span class='support'>応援しました</span>";
+  // $([supportBtnTop, supportBtnRight, supportBtnBottom]).on('click', function(){
+  //   supportBtnTop.innerHTML= support;
+  // })
   // modalWindow
   var modalWindowEntry = $('#overlay, #modal-window__projects__entry');
   var modalWindowSupport = $('#overlay,  #modal-window__projects__support');
