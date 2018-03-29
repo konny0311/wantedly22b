@@ -25,8 +25,9 @@ $(function() {
     supportBtnRight.innerHTML= support;
     supportBtnBottom.innerHTML= support;
     // 応援された数を保存
+    var path = location.pathname + "/supports"
     $.ajax({
-      url: 'supports#create',
+      url: path,
       type: "POST",
       data: {project_id: 1, user_id: 1},
       dataType: 'json',
