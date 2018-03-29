@@ -35,14 +35,17 @@ $(function() {
       contentType: false,
       cache: false
     })
-    .done(function(data){
-      console.log(data)
+    .done(function(){
+      var sumSupport = $('.company--under--bar__support--box__support--num')[0].innerHTML
+      var num = Number(sumSupport)
+      console.log(num+1)
+      $('.company--under--bar__support--box__support--num')[0].innerHTML =
+      num+1
     })
     .fail(function(){
       alert('応援できませんでした')
     })
   })
-
   // modalWindow
   var modalWindowEntry = $('#overlay, #modal-window__projects__entry');
   var modalWindowSupport = $('#overlay,  #modal-window__projects__support');
