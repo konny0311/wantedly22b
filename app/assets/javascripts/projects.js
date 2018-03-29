@@ -26,10 +26,11 @@ $(function() {
     supportBtnBottom.innerHTML= support;
     // 応援された数を保存
     var path = location.pathname + "/supports"
+    var id = location.href.slice(31)
     $.ajax({
       url: path,
       type: "POST",
-      data: {project_id: 1, user_id: 1},
+      data: {project_id: id},
       dataType: 'json',
       processData: false,
       contentType: false,
@@ -38,7 +39,6 @@ $(function() {
     .done(function(){
       var sumSupport = $('.company--under--bar__support--box__support--num')[0].innerHTML
       var num = Number(sumSupport)
-      console.log(num+1)
       $('.company--under--bar__support--box__support--num')[0].innerHTML =
       num+1
     })
