@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :projects, only: [:index, :show] do
     resources :supports, only: [:create, :destroy]
     resources :entries, only: [:create, :destroy]
+    resources :saves, only: [:create, :destroy]
   end
 end
