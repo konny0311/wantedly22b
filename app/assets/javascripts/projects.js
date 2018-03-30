@@ -24,27 +24,29 @@ $(function() {
     supportBtnTop.innerHTML= support;
     supportBtnRight.innerHTML= support;
     supportBtnBottom.innerHTML= support;
-    // 応援された数を保存
+    // 応援された数を保存,カウンターに+1
     var path = location.pathname + "/supports"
     var id = location.href.slice(31)
-    $.ajax({
-      url: path,
-      type: "POST",
-      data: {project_id: id},
-      dataType: 'json',
-      processData: false,
-      contentType: false,
-      cache: false
-    })
-    .done(function(){
-      var sumSupport = $('.company--under--bar__support--box__support--num')[0].innerHTML
-      var num = Number(sumSupport)
-      $('.company--under--bar__support--box__support--num')[0].innerHTML =
-      num+1
-    })
-    .fail(function(){
-      alert('応援できませんでした')
-    })
+    var button = $('.company--under--bar__support--box__support--btn')
+    var counter = Number($('.company--under--bar__support--box__support--num')[0].innerHTML)
+    if (!button.hasClass('pressed')) {
+      $.ajax({
+        url: path,
+        type: "POST",
+        data: {project_id: id},
+        dataType: 'json',
+        processData: false,
+        contentType: false,
+        cache: false
+      })
+      .done(function(){
+        $('.company--under--bar__support--box__support--num')[0].innerHTML = counter+1
+        button.addClass('pressed')
+      })
+      .fail(function(){
+        alert('応援できませんでした')
+      })
+    }
   })
   // modalWindow
   var modalWindowEntry = $('#overlay, #modal-window__projects__entry');
