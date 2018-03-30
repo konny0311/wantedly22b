@@ -3,6 +3,7 @@
 @import "footer/little";
 @import "footer/strong";
 @import "footer/list";
+@import "modules/projects-left";
 
 body{
   width: 100%;
@@ -27,9 +28,125 @@ body{
     height: 1550px;
     .left{
       float: left;
+      height: 1100px;
       width: 300px;
       background-color: #fff;
       height: 100%;
+      .sticky{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        margin-top : -50px;
+        padding-top : 50px;
+        .header{
+          margin-bottom: 40px;
+          p{
+            color: $main-gray;
+            font-size: 14px;
+            float: left;
+            width: 100px;
+          }
+          .subIcon{
+            float: right;
+            width: 18px;
+            margin-right: 70px;
+            a{
+              color: $black;
+              line-height: 16px;
+            }
+          }
+        }
+        .body{
+          clear: both;
+          p{
+            color: $main-gray;
+            font-size: 12px;
+          }
+          .pulldown{
+            border: 1px solid $light-gray;
+            height: 30px;
+            width: 243px;
+            margin-bottom: 15px;
+            border-radius: 3px;
+            span{
+              font-size: 12px;
+              margin-left: 10px;
+              a{
+                text-decoration: none;
+                color: $black;
+              }
+            }
+          }
+          .search-box{
+            width: 100%;
+            position: relative;
+            border-radius: 3px;
+            .add-item{
+              width: 220px;
+              padding-left: 25px;
+              font-size: 12px;
+              color: $black;
+              line-height: 30px;
+              outline: none;
+              border: 1px solid $light-gray;
+              box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.06), 0 0 4px 0 rgba(0, 0, 0, 0.06);
+              border-radius: 3px;
+            }
+            ::-webkit-input-placeholder {
+              color: #ccc;
+            }
+            .icon-search{
+              position: absolute;
+              top: 8px;
+              left: 6px;
+              color: #777;
+            }
+          }
+          .search-job{
+            ul{
+              border-bottom: 1px solid $light-gray;
+              width: 240px;
+              margin-top: 15px;
+              li{
+                padding-left: 15px;
+                margin-bottom: 15px;
+                font-size: 12px;
+                a{
+                  text-decoration: none;
+                  color: $black;
+                }
+              }
+            }
+          }
+          .field{
+            margin-top: 20px;
+            p{
+              margin-left: 15px;
+            }
+            &__items{
+              @include list-items();
+            }
+          }
+          .region{
+            margin-top: 20px;
+            p{
+              margin-left: 15px;
+            }
+            &__items{
+              @include list-items();
+            }
+          }
+          .character{
+            margin-top: 20px;
+            p{
+              margin-left: 15px;
+            }
+            &__items{
+              @include list-items();
+            }
+          }
+        }
+      }
     }
     .right{
       float: right;
@@ -61,7 +178,7 @@ body{
               font-size: 14px;
               a{
                 text-decoration: none;
-                color: #000;
+                color: $black;
               }
               a:hover {
                 color: #00A4BB;
