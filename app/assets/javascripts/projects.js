@@ -26,10 +26,12 @@ $(function() {
     supportBtnBottom.innerHTML= support;
     // 応援された数を保存,カウンターに+1
     var path = location.pathname + "/supports"
-    var id = location.href.slice(31)
+    var id = location.href.match(/projects\/.*/)[0].match(/\d+/)
     var button = $('.company--under--bar__support--box__support--btn')
     var counter = Number($('.company--under--bar__support--box__support--num')[0].innerHTML)
-    if (!button.hasClass('pressed')) {
+    if (!button.hasClass('pressed'))
+    // 応援ボタンが押されるとbuttonのクラス名に'pressed'を追加し、'pressed'の有無により既に押されているかどうかを判定
+    {
       $.ajax({
         url: path,
         type: "POST",
