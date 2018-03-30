@@ -111,6 +111,10 @@ body{
                 padding-left: 15px;
                 margin-bottom: 15px;
                 font-size: 12px;
+                a{
+                  text-decoration: none;
+                  color: $black;
+                }
               }
             }
           }
