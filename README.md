@@ -339,8 +339,32 @@ Column|Type|Options|
 - belong_to :user
 - belong_to :company
 
-<!--projectsとusersの中間テーブル-->
+<!--projectsとusersの中間テーブル:応援-->
 ## supportsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer||
+|project_id|integer||
+
+### association
+- belong_to :user
+- belong_to :projects
+
+<!--projectsとusersの中間テーブル:エントリー-->
+## entriesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer||
+|project_id|integer||
+
+### association
+- belong_to :user
+- belong_to :projects
+
+<!--projectsとusersの中間テーブル:あとで見る-->
+## savesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
