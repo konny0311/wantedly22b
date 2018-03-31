@@ -3,17 +3,18 @@
     = render 'shared/header'
     .contents
       .carousel
-        %ul.slider
-          %li
-            = link_to image_tag "#", size: "", alt: ""
-          %li
-            = link_to image_tag "#", size: "", alt: ""
-          %li
-            = link_to image_tag "#", size: "", alt: ""
-          %li
-            = link_to image_tag "#", size: "", alt: ""
-          %li
-            = link_to image_tag "#", size: "", alt: ""
+        .slick-box
+          %ul.slider
+            %li
+              = link_to image_tag "cat1.jpg", size: "150px", alt: ""
+            %li
+              = link_to image_tag "IMG_0386.png", size: "150px", alt: ""
+            %li
+              = link_to image_tag "cat1.jpg", size: "150px", alt: ""
+            %li
+              = link_to image_tag "IMG_0386.png", size: "150px", alt: ""
+            %li
+              = link_to image_tag "cat1.jpg", size: "150px", alt: ""
       .main
         .left
           .sticky
