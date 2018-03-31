@@ -18,9 +18,13 @@ body{
   padding-bottom: 90px;
   border-bottom: 1px solid #ddd;
   .carousel{
-    width: 100%;
     height: 450px;
-    background: #ccc;
+    li{
+      img{
+        width: 600px;
+        height: 400px;
+      }
+    }
   }
   .main{
     width: 900px;
