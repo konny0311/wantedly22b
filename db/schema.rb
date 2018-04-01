@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180329105332) do
+ActiveRecord::Schema.define(version: 20180330110136) do
 
   create_table "companies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                        null: false
@@ -43,6 +43,13 @@ ActiveRecord::Schema.define(version: 20180329105332) do
     t.datetime "updated_at",               null: false
   end
 
+  create_table "entries", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id",    null: false
+    t.integer  "project_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "feeds", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text     "title",      limit: 65535, null: false
     t.text     "content",    limit: 65535, null: false
@@ -64,6 +71,13 @@ ActiveRecord::Schema.define(version: 20180329105332) do
     t.integer  "supports_count"
     t.index ["job_type"], name: "index_projects_on_job_type", using: :btree
     t.index ["title"], name: "index_projects_on_title", using: :btree
+  end
+
+  create_table "saves", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id",    null: false
+    t.integer  "project_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "supports", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
