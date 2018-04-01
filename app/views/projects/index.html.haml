@@ -6,15 +6,11 @@
         .slick-box
           %ul.slider
             %li
-              = link_to image_tag "cat1.jpg", size: "150px", alt: ""
+              = link_to image_tag "wantedly22b.png", size: "150px", alt: ""
             %li
-              = link_to image_tag "IMG_0386.jpg", size: "150px", alt: ""
+              = link_to image_tag "wantedly22b.png", size: "150px", alt: ""
             %li
-              = link_to image_tag "cat1.jpg", size: "150px", alt: ""
-            %li
-              = link_to image_tag "IMG_0386.jpg", size: "150px", alt: ""
-            %li
-              = link_to image_tag "cat1.jpg", size: "150px", alt: ""
+              = link_to image_tag "wantedly22b.png", size: "150px", alt: ""
       .main
         .left
           .sticky
@@ -94,85 +90,34 @@
                   = link_to "新着", root_path
                 %li
                   = link_to "人気", root_path
-          .items
-            .item
-              .item__image
-              .item__occupation
-                %span
-                  エンジニア
-              .item__catch-copy
-                %h1
-                  今挑戦するからこそ、将来価値のある人材に成長するエンジニア採用
-              .item__sentence
-                %p
-                  エンジニア（フロントエンド） ◎業務内容 ・THEO および、関連するサービスのWeb フロントエンドの構築 ・Vue.js, React 等を使用した、SPA(Single Page Application) の実装 ・
-              .item__company-image
-                = link_to image_tag("#", alt: "image", height: "50px"), root_path
-              .item__company-name
-                %p
-                  株式会社お金のデザイン
-              .item__action
-                .date
-                  %i.fa.fa-clock-o
+          %ul.items
+            - @projects.each do |project|
+              %li.item
+                .item__image
+                .item__occupation
+                  %span
+                    エンジニア
+                .item__catch-copy
+                  %h1
+                    =project.title
+                .item__sentence
                   %p
-                    29日前
-                .icon
-                  = link_to root_path do
-                    %i.fa.fa-bookmark-o
-                  = link_to root_path do
-                    %i.fa.fa-bullhorn
-            .item
-              .item__image
-              .item__occupation
-                %span
-                  エンジニア
-              .item__catch-copy
-                %h1
-                  今挑戦するからこそ、将来価値のある人材に成長するエンジニア採用
-              .item__sentence
-                %p
-                  エンジニア（フロントエンド） ◎業務内容 ・THEO および、関連するサービスのWeb フロントエンドの構築 ・Vue.js, React 等を使用した、SPA(Single Page Application) の実装 ・
-              .item__company-image
-                = link_to image_tag("#", alt: "image", height: "50px"), root_path
-              .item__company-name
-                %p
-                  株式会社お金のデザイン
-              .item__action
-                .date
-                  %i.fa.fa-clock-o
+                    =project.requirement
+                .item__company-image
+                  = link_to image_tag("#", alt: "image", height: "50px"), root_path
+                .item__company-name
                   %p
-                    29日前
-                .icon
-                  = link_to root_path do
-                    %i.fa.fa-bookmark-o
-                  = link_to root_path do
-                    %i.fa.fa-bullhorn
-            .item
-              .item__image
-              .item__occupation
-                %span
-                  エンジニア
-              .item__catch-copy
-                %h1
-                  今挑戦するからこそ、将来価値のある人材に成長するエンジニア採用
-              .item__sentence
-                %p
-                  エンジニア（フロントエンド） ◎業務内容 ・THEO および、関連するサービスのWeb フロントエンドの構築 ・Vue.js, React 等を使用した、SPA(Single Page Application) の実装 ・
-              .item__company-image
-                = link_to image_tag("#", alt: "image", height: "50px"), root_path
-              .item__company-name
-                %p
-                  株式会社お金のデザイン
-              .item__action
-                .date
-                  %i.fa.fa-clock-o
-                  %p
-                    29日前
-                .icon
-                  = link_to root_path do
-                    %i.fa.fa-bookmark-o
-                  = link_to root_path do
-                    %i.fa.fa-bullhorn
+                    =project.company.name
+                .item__action
+                  .date
+                    %i.fa.fa-clock-o
+                    %p
+                      =project.created_at.to_s(:date)
+                  .icon
+                    = link_to root_path do
+                      %i.fa.fa-bookmark-o
+                    = link_to root_path do
+                      %i.fa.fa-bullhorn
           .order
             %ul
               %li
