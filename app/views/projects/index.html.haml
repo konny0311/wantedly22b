@@ -3,8 +3,18 @@
     = render 'shared/header'
     .contents
       .carousel
-        %p
-          カルーセル実装予定
+        .slick-box
+          %ul.slider
+            %li
+              = link_to image_tag "cat1.jpg", size: "150px", alt: ""
+            %li
+              = link_to image_tag "IMG_0386.jpg", size: "150px", alt: ""
+            %li
+              = link_to image_tag "cat1.jpg", size: "150px", alt: ""
+            %li
+              = link_to image_tag "IMG_0386.jpg", size: "150px", alt: ""
+            %li
+              = link_to image_tag "cat1.jpg", size: "150px", alt: ""
       .main
         .left
           .sticky
