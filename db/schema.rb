@@ -16,16 +16,16 @@ ActiveRecord::Schema.define(version: 20180317034341) do
     t.string   "name",                               null: false
     t.string   "email",                              null: false
     t.string   "encrypted_password",                 null: false
-    t.string   "passworld",                          null: false
     t.string   "catchcopy"
     t.string   "profile"
     t.string   "future"
     t.integer  "gender"
-    t.integer  "birthday"
+    t.integer  "birthday_year"
+    t.integer  "birthday_month"
+    t.integer  "birthday_day"
     t.string   "cover_image"
     t.string   "profile_image"
     t.integer  "tel"
-    t.string   "company_id",                         null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

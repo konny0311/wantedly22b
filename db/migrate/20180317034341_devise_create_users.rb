@@ -7,16 +7,16 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string  :name,               null: false
       t.string  :email,              null: false, unique:true
       t.string  :encrypted_password, null: false
-      t.string  :passworld,          null:false
       t.string  :catchcopy
       t.string  :profile
       t.string  :future
       t.integer :gender
-      t.integer :birthday
+      t.integer :birthday_year
+      t.integer :birthday_month
+      t.integer :birthday_day
       t.string  :cover_image
       t.string  :profile_image
       t.integer :tel
-      t.string  :company_id, null:false,foreign_key:true
 
 
 
