@@ -42,7 +42,7 @@ $slick-opacity-not-active: 0.25 !default;
 /* Slider */
 
 .slick-list {
-    height: 400px;
+    // height: 400px;
     .slick-loading & {
         background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
     }
@@ -174,7 +174,6 @@ $slick-opacity-not-active: 0.25 !default;
                 top: 0;
                 left: 0;
                 content: "●";
-                font-size: 20px;
                 width: 20px;
                 height: 20px;
                 font-family: $slick-font-family;
