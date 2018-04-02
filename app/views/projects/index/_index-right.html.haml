@@ -14,7 +14,7 @@
           = link_to "人気", root_path
   %ul.items
     - @projects.each do |project|
-      %li.item
+      %li.item{"data-project_id": project.id}
         = link_to "projects/#{project.id}" do
           =image_tag(project.company.image, alt: "wantedly-home", class: "item__image")
           .item__occupation
@@ -35,7 +35,5 @@
               %p
                 =project.created_at.to_s(:date)
             .icon
-              = link_to root_path do
-                %i.fa.fa-bookmark-o
-              = link_to root_path do
-                %i.fa.fa-bullhorn
+              %i.fa.fa-bookmark-o{"data-project_id": project.id}
+              %i.fa.fa-bullhorn{"data-project_id": project.id}
