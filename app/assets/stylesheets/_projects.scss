@@ -9,6 +9,7 @@ body{
   width: 100%;
   margin: 0 auto;
   height: 100%;
+  @include normal-font();
 }
 
 
@@ -202,6 +203,10 @@ body{
           border-bottom: solid 1px #ddd;
           height: 530px;
           margin-bottom: 50px;
+          text-decoration: none;
+          .item__image:hover + .item__catch-copy a {
+            color: #7fdae7;
+          }
           .item__image{
             height: 200px;
             width: 100%;
@@ -216,19 +221,23 @@ body{
               font-size: 14px;
               border-radius: 3px;
               padding: 3px;
+              text-decoration: none;
             }
+          }
+          .item__catch-copy:hover {
+            color: #7fdae7;
           }
           .item__catch-copy{
             margin-top: 10px;
-            h1{
               font-size: 22px;
               font-weight: bold;
-            }
+              text-decoration: none;
           }
           .item__sentence{
             margin-top: 10px;
-            p{
+            a{
               color: #9DA0A4;
+              text-decoration: none;
             }
           }
           .item__company-image{
