@@ -9,6 +9,7 @@ body{
   width: 100%;
   margin: 0 auto;
   height: 100%;
+  @include normal-font();
 }
 
 
@@ -191,24 +192,30 @@ body{
           }
         }
       }
-      .items{
+      ul.items{
         height: 1400px;
         width: 100%;
         background: #fff;
         margin-top: 30px;
         overflow: auto;
-        .item{
+        list-style: none;
+        li.item{
           border-bottom: solid 1px #ddd;
           height: 530px;
           margin-bottom: 50px;
-          &__image{
+          text-decoration: none;
+          .item__image:hover + .item__catch-copy a {
+            color: #7fdae7;
+          }
+          .item__image{
             height: 200px;
             width: 100%;
             background-color: #999;
 
           }
-          &__occupation{
+          .item__occupation{
             margin-top: 20px;
+            text-decoration: none;
             span{
               border: 1px solid #00A4BB;
               color: #00A4BB;
@@ -217,31 +224,37 @@ body{
               padding: 3px;
             }
           }
-          &__catch-copy{
+          .item__catch-copy:visited {
+            color: #222222;
+          }
+          .item__catch-copy:hover {
+            color: #7fdae7;
+          }
+          .item__catch-copy{
             margin-top: 10px;
-            h1{
               font-size: 22px;
               font-weight: bold;
-            }
+              text-decoration: none;
           }
-          &__sentence{
+          .item__sentence{
             margin-top: 10px;
-            p{
+            a{
               color: #9DA0A4;
+              text-decoration: none;
             }
           }
-          &__company-image{
+          .item__company-image{
             float: left;
             margin-top: 50px;
             a{
 
             }
           }
-          &__company-name{
+          .item__company-name{
             float: left;
             margin: 50px 0 0 10px;
           }
-          &__action{
+          .item__action{
             width: 200px;
             float: right;
             margin-top: 55px;

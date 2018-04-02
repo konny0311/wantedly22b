@@ -1,0 +1,41 @@
+.right
+  .nav
+    %p
+      10/8000
+    .nav__genre
+      %p
+        並び替え
+      %ul
+        %li
+          = link_to "おすすめ", root_path
+        %li
+          = link_to "新着", root_path
+        %li
+          = link_to "人気", root_path
+  %ul.items
+    - @projects.each do |project|
+      %li.item
+        = link_to "projects/#{project.id}" do
+          =image_tag(project.company.image, alt: "wantedly-home", class: "item__image")
+          .item__occupation
+            %span
+              エンジニア
+          = link_to "projects/#{project.id}", {:class => "item__catch-copy"} do
+            =project.title
+          .item__sentence
+            = link_to "projects/#{project.id}" do
+              =project.requirement
+          .item__company-image
+            = link_to image_tag(project.company.logo, alt: "image", height: "50px"), root_path
+          .item__company-name
+            =project.company.name
+          .item__action
+            .date
+              %i.fa.fa-clock-o
+              %p
+                =project.created_at.to_s(:date)
+            .icon
+              = link_to root_path do
+                %i.fa.fa-bookmark-o
+              = link_to root_path do
+                %i.fa.fa-bullhorn
