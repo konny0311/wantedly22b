@@ -215,14 +215,17 @@ body{
           }
           .item__occupation{
             margin-top: 20px;
+            text-decoration: none;
             span{
               border: 1px solid #00A4BB;
               color: #00A4BB;
               font-size: 14px;
               border-radius: 3px;
               padding: 3px;
-              text-decoration: none;
             }
+          }
+          .item__catch-copy:visited {
+            color: #222222;
           }
           .item__catch-copy:hover {
             color: #7fdae7;
