@@ -15,44 +15,31 @@
   %ul.items
     - @projects.each do |project|
       %li.item
-        .item__image
-        .item__occupation
-          %span
-            エンジニア
-        .item__catch-copy
-          %h1
-            =project.title
-        .item__sentence
-          %p
-            =project.requirement
-        .item__company-image
-          = link_to image_tag("#", alt: "image", height: "50px"), root_path
-        .item__company-name
-          %p
-            =project.company.name
-        .item__action
-          .date
-            %i.fa.fa-clock-o
+        = link_to "projects/#{project.id}" do
+          =image_tag(project.company.image, alt: "wantedly-home", class: "item__image")
+          -# .item__image
+          .item__occupation
+            %span
+              エンジニア
+          .item__catch-copy
+            %h1
+            = link_to "projects/#{project.id}" do
+              =project.title
+          .item__sentence
             %p
-              =project.created_at.to_s(:date)
-          .icon
-            = link_to root_path do
-              %i.fa.fa-bookmark-o
-            = link_to root_path do
-              %i.fa.fa-bullhorn
-  .order
-    %ul
-      %li
-        1
-      %li
-        2
-      %li
-        3
-      %li
-        4
-      %li
-        5
-      %li
-        …
-    %p
-      次へ
+              =project.requirement
+          .item__company-image
+            = link_to image_tag("#", alt: "image", height: "50px"), root_path
+          .item__company-name
+            %p
+              =project.company.name
+          .item__action
+            .date
+              %i.fa.fa-clock-o
+              %p
+                =project.created_at.to_s(:date)
+            .icon
+              = link_to root_path do
+                %i.fa.fa-bookmark-o
+              = link_to root_path do
+                %i.fa.fa-bullhorn
