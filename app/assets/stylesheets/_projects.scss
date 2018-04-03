@@ -280,11 +280,17 @@ body{
             .icon{
               float: right;
               width: 110px;
+              i:hover {
+                color: #7fdae7;
+                cursor: pointer;
+                cursor: hand;
+              }
               i{
                 float: right;
                 height: 20px;
                 width: 20px;
                 font-size: 20px;
+                font-weight:bold;
                 color: $main-gray;
                 margin: 0 5px 0 20px;
               }

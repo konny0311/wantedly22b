@@ -9,6 +9,7 @@ $(function() {
     var path = location.pathname + "/saves"
     var id = location.href.split("/projects/")[1]
     var button = $('.contents--right__interests--top--centered__check--later__btn')
+    console.log(path)
     if (!button.hasClass('pressed'))
     // 保存ボタンが押されるとbuttonのクラス名に'pressed'を追加し、'pressed'の有無により既に押されているかどうかを判定
     {
@@ -23,6 +24,7 @@ $(function() {
       })
       .done(function(){
         button.addClass('pressed')
+
       })
       .fail(function(){
         alert('保存できませんでした')
