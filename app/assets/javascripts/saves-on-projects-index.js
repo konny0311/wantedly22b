@@ -6,7 +6,7 @@ $(function() {
     console.log(id)
     console.log(path)
     console.log(this)
-    if (!this.hasClass('pressed'))
+    if (!$(this).hasClass('pressed'))
     // 保存ボタンが押されるとbookmarkボタンのクラス名に'pressed'を追加し、'pressed'の有無により既に押されているかどうかを判定
     {
       $.ajax({
