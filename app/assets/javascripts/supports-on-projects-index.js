@@ -3,14 +3,11 @@ $(function() {
   $('.fa-bullhorn').on('click', function(){
     var id = this.dataset.project_id
     var path = location.pathname + "projects/" + id + "/supports"
-    console.log(id)
-    console.log(path)
-    console.log(this)
-    if (!$(this).hasClass('pressed'))
+    var btn = this
+    if (!$(btn).hasClass('pressed'))
     // 応援ボタンが押されると応援ボタンのクラス名に'pressed'を追加し、'pressed'の有無により既に押されているかどうかを判定
     {
-      $(this).addClass('pressed')
-      console.log(this)
+      $(btn).addClass('pressed')
       $.ajax({
         url: path,
         type: "POST",
@@ -21,6 +18,7 @@ $(function() {
         cache: false
       })
       .done(function(){
+        btn.style.color = "#7fdae7";
       })
       .fail(function(){
         alert('保存できませんでした')
