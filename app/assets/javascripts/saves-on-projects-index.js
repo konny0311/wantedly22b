@@ -9,6 +9,8 @@ $(function() {
     if (!$(this).hasClass('pressed'))
     // 保存ボタンが押されるとbookmarkボタンのクラス名に'pressed'を追加し、'pressed'の有無により既に押されているかどうかを判定
     {
+      $(this).addClass('pressed')
+      console.log(this)
       $.ajax({
         url: path,
         type: "POST",
@@ -19,7 +21,6 @@ $(function() {
         cache: false
       })
       .done(function(){
-        this.addClass('pressed')
       })
       .fail(function(){
         alert('保存できませんでした')
