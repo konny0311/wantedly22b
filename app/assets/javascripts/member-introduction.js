@@ -3,7 +3,7 @@ $(function() {
   var member = $('.contents--left__company__members__image__container');
   var sentence = $('.contents--left__company__members__introduction');
   member.hover(function() {
-    console.log('ok')
-    sentence.html("aaa");
+    console.log(this)
+    // thisからuser_id取得し、自己紹介表示に利用したい
   })
 })
