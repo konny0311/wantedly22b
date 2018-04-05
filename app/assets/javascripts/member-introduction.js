@@ -6,6 +6,7 @@ $(function() {
     console.log(this)
     var id = this.dataset.user_id;
     console.log(id)
-    // thisからuser_id取得し、自己紹介表示に利用したい
+    // 自己紹介文はli(display:none)として記載
+    // 写真hoverされたもののidを入手し、id一致するもののみli(display:list-item)化
   })
 })
