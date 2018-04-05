@@ -182,6 +182,9 @@
           .catchcopy {
             display: none;
           }
+          .catchcopy--shown {
+            display: list-item;            
+          }
         }
       &__company__policy {
         h2 {

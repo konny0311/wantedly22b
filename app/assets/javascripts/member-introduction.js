@@ -8,6 +8,7 @@ $(function() {
     // console.log(id)
     var catchcopy = $('.catchcopy')[id-1];
     console.log(catchcopy);
+    catchcopy.className = "catchcopy--shown"
     // 自己紹介文はli(display:none)として記載
     // 写真hoverされたもののidを入手し、id一致するもののみli(display:list-item)化
 
