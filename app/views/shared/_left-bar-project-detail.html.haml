@@ -9,7 +9,10 @@
         .contents--left__company__members__image__container__member__name
           =user.name
         .contents--left__company__members__image__container__member__position 営業部長
-  .contents--left__company__members__introduction
+  %ul.contents--left__company__members__introduction
+    - @users.each do |user|
+      %li.catchcopy{"data-user_id": user.id}
+        = user.catchcopy
   .contents--left__company__policy
     .what-content
       %h2 なにをやっているのか

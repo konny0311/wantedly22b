@@ -179,6 +179,9 @@
           width: 590px;
           background-color: $color-member-introduction;
           margin-left: 15px;
+          .catchcopy {
+            display: none;
+          }
         }
       &__company__policy {
         h2 {
