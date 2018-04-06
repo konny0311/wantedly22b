@@ -3,23 +3,16 @@
     %p 株式会社Wantedlyのメンバー
     .contents--left__company__members__header__btn 全員みる(10)
   %ul.contents--left__company__members__image
-    %li.contents--left__company__members__image__container
-      =image_tag "wlogo.png", class: "contents--left__company__members__image__container__member__img"
-      .contents--left__company__members__image__container__member__name 鈴木太一
-      .contents--left__company__members__image__container__member__position 営業部長
-    %li.contents--left__company__members__image__container
-      =image_tag "wlogo.png", class: "contents--left__company__members__image__container__member__img"
-      .contents--left__company__members__image__container__member__name 鈴木太一
-      .contents--left__company__members__image__container__member__position 営業部長
-    %li.contents--left__company__members__image__container
-      =image_tag "wlogo.png", class: "contents--left__company__members__image__container__member__img"
-      .contents--left__company__members__image__container__member__name 鈴木太一
-      .contents--left__company__members__image__container__member__position 営業部長
-    %li.contents--left__company__members__image__container
-      =image_tag "wlogo.png", class: "contents--left__company__members__image__container__member__img"
-      .contents--left__company__members__image__container__member__name 鈴木太一
-      .contents--left__company__members__image__container__member__position 営業部長
-  .contents--left__company__members__introduction スタートアップでフロントエンドエンジニアとして働きながら、個人では紙でもスクリーンでもない地図プロダクトを作っています。前職では、開発者向けプロダクト/サービスのマネージメントを任され、検証、ローカライズ、営業支援、プロダクトマーケティングなど幅広い業務を経験。その他にも、ブログ執筆、コミュニティイベントの運営・支援を通した、開発者向けのマーケティング活動 (DevRel) を企画してリードしていました。
+    - @users.each do |user|
+      %li.contents--left__company__members__image__container{"data-user_id": user.id}
+        =image_tag "wlogo.png", class: "contents--left__company__members__image__container__member__img"
+        .contents--left__company__members__image__container__member__name
+          =user.name
+        .contents--left__company__members__image__container__member__position 営業部長
+  %ul.contents--left__company__members__introduction
+    - @users.each do |user|
+      %li.catchcopy{"data-user_id": user.id}
+        = user.catchcopy
   .contents--left__company__policy
     .what-content
       %h2 なにをやっているのか
